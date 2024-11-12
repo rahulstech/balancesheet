@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<router xmlns="https://github.com/rahulstech/javafx-routing"
+        home="income_expense_table">
+
+<destination id="income_expense_table"
+             fxml="income_expense_table.fxml"/>
+
+</router>

@@ -1,0 +1,30 @@
+plugins {
+    id 'java-library'
+}
+
+ext {
+    junitVersion = '5.11.2'
+
+    vOrmLite = '5.6'
+
+    vSqliteJdbc = '3.41.2.2'
+}
+
+dependencies {
+    implementation project(':core')
+
+    // JDBC SQLite driver
+    implementation "org.xerial:sqlite-jdbc:${vSqliteJdbc}"
+
+    // ORMLite core library
+    implementation "com.j256.ormlite:ormlite-core:${vOrmLite}"
+
+    // ORMLite JDBC for SQLite
+    implementation "com.j256.ormlite:ormlite-jdbc:${vOrmLite}"
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+
+    testImplementation "org.junit.jupiter:junit-jupiter-params:${junitVersion}"
+
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}

@@ -1,0 +1,62 @@
+$icon-material-calendar-month: "M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z";
+$icon-material-chevron-left: "M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z";
+$icon-material-chevron-right: "M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z";
+$icon-material-close: "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z";
+$icon-material-refresh: "M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z";
+$icon-material-plus: "M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z";
+$icon-material-delete: "M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z";
+$icon-material-pencil: "M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z";
+$icon-material-arrow-drop-down: "M480-360 280-560h400L480-360Z";
+$icon-material-arrow-drop-up: "m280-400 200-200 200 200H280Z";
+$icon-material-arrow-right: "M400-280v-400l200 200-200 200Z";
+$icon-material-arrow-left: "M560-280 360-480l200-200v400Z";
+$icon-material-first-page: "M240-240v-480h80v480h-80Zm440 0L440-480l240-240 56 56-184 184 184 184-56 56Z";
+$icon-material-last-page: "m280-240-56-56 184-184-184-184 56-56 240 240-240 240Zm360 0v-480h80v480h-80Z";
+$icon-material-arrow-downward: "M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z";
+$icon-material-cancel: "m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z";
+$icon-material-search: "M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z";
+$icon-material-keyboard-arrow-down: "M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z";
+$icon-material-check: "M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z";
+$icon-material-cancel-filled: "m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z";
+
+/**************************
+*        Icon Class       *
+***************************/
+
+$icons: (
+   "icon-material-calendar-month": $icon-material-calendar-month,
+   "icon-material-chevron-left": $icon-material-chevron-left,
+   "icon-material-chevron-right": $icon-material-chevron-right,
+   "icon-material-close": $icon-material-close,
+   "icon-material-refresh": $icon-material-refresh,
+   "icon-material-plus": $icon-material-plus,
+   "icon-material-delete": $icon-material-delete,
+   "icon-material-pencil": $icon-material-pencil,
+   "icon-material-arrow-drop-down": $icon-material-arrow-drop-down,
+   "icon-material-arrow-drop-up": $icon-material-arrow-drop-up,
+   "icon-material-arrow-right": $icon-material-arrow-right,
+   "icon-material-arrow-left": $icon-material-arrow-left,
+   "icon-material-first-page": $icon-material-first-page,
+   "icon-material-last-page": $icon-material-last-page,
+   "icon-material-arrow-downward": $icon-material-arrow-downward,
+   "icon-material-cancel": $icon-material-cancel,
+   "icon-material-search": $icon-material-search,
+   "icon-material-keyboard-arrow-down": $icon-material-keyboard-arrow-down,
+   "icon-material-check": $icon-material-check,
+   "icon-material-cancel-filled": $icon-material-cancel-filled,
+ );
+
+@each $name, $icon in $icons {
+    .rst-#{$name} {
+        -fx-shape: "#{$icon}";
+    }
+}
+
+@mixin rst-icon-base($color) {
+    -fx-background-color: $color; // region icon
+    -fx-fill: $color; // shape icon
+    -fx-text-fill: $color; // font icon
+}
+
+
+

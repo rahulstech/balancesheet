@@ -1,0 +1,174 @@
+/***************************
+*          Tooltip          *
+***************************/
+
+.rst-tooltip {
+    -fx-min-height: 24px;
+    -fx-background-color: $color-inverse-surface;
+    -fx-padding: 2px 8px;
+    @include shape-xs();
+    @include typeface-body-sm($fill: $color-inverse-on-surface);
+    -fx-effect: none;
+}
+
+/***************************
+*          Dialog          *
+***************************/
+
+.rst-dialog {
+    $dialog-min-width: 280px;
+    $dialog-max-width: 560px;
+    $dialog-max-height: 700px;
+    $dialog-padding: 24px;
+
+    $dialog-close-button-size: 24px;
+    $dialog-close-button-padding: $dialog-close-button-size / 6;
+    $dialog-close-icon-size: 12px;
+
+    // Use variables for dimensions
+    -fx-min-width: $dialog-min-width;
+    -fx-max-width: $dialog-max-width;
+    -fx-max-height: $dialog-max-height;
+
+    @include shape-xl();
+    @include elevate(3);
+
+    .rst-dialog-main {
+        // Use variables for main dialog dimensions
+        -fx-min-width: $dialog-min-width;
+        -fx-max-width: $dialog-max-width;
+        -fx-max-height: $dialog-max-height;
+        -fx-padding: $dialog-padding;
+        @include shape-xl();
+        -fx-background-color: $color-surface-container-high;
+
+        .rst-dialog-header {
+            .rst-close-button {
+                -fx-pref-height: $dialog-close-button-size;
+                -fx-pref-width: $dialog-close-button-size;
+                -fx-padding: $dialog-close-button-padding;
+                -fx-background-color: transparent;
+                @include shape-full();
+                -fx-content-display: GRAPHIC_ONLY;
+
+                .rst-close-icon {
+                    -fx-max-height: $dialog-close-icon-size;
+                    -fx-max-width: $dialog-close-icon-size;
+                    -fx-shape: $icon-material-close;
+                    -fx-background-color: $color-outline-variant;
+                }
+
+                &:hover {
+                    -fx-background-color: $color-error;
+
+                    .rst-close-icon {
+                        -fx-background-color: $color-on-error;
+                    }
+                }
+
+                &:armed {
+                    -fx-background-color: $color-error, rgba($color-on-error, 0.1);
+                    -fx-background-insets: 0, 0;
+                }
+            }
+
+            .rst-dialog-title {
+                @include typeface-headline-sm();
+            }
+        }
+
+        .rst-dialog-buttonbar {
+            .rst-dialog-button {
+                @extend .rst-text-button;
+            }
+        }
+
+        .rst-dialog-body {
+            -fx-min-width: $dialog-min-width - 2 * $dialog-padding;
+            -fx-max-width: $dialog-max-width - 2 * $dialog-padding;
+            -fx-max-height: 600px;
+            @include typeface-body-md($color-on-surface-variant);
+            -fx-alignment: TOP_LEFT;
+            -fx-text-alignment: TOP_LEFT;
+            -fx-wrap-text: true;
+
+            & > .scroll-pane {
+                @extend .rst-scroll-pane;
+            }
+        }
+
+        .rst-dialog-button-bar {
+            -fx-pref-height: 52px;
+
+            .rst-dialog-button {
+                @extend .rst-text-button;
+
+                &:hover {
+                    @include elevate(0);
+                }
+            }
+
+            .rst-dialog-button:default {
+                @extend .rst-filled-button;
+
+                &:hover {
+                    @include elevate(0);
+                }
+            }
+        }
+    }
+}
+
+/***************************
+*          Toast           *
+***************************/
+
+.rst-toast {
+    $toast-min-height: 36px;
+    $toast-max-height: 56px;
+    $toast-max-width: 320px;
+    $toast-padding: 12px;
+    $toast-element-gap: 12px;
+    $toast-close-button-size: 18px;
+    $toast-close-icon-size: 12px;
+    $toast-close-button-padding: 4px;
+
+    -fx-min-height: $toast-min-height;
+    -fx-max-height: $toast-max-height;
+    -fx-max-width: $toast-max-width;
+    @include shape-xs();
+    @include elevate(3);
+
+    .rst-toast-main {
+        -fx-min-height: $toast-min-height;
+        -fx-max-height: $toast-max-height;
+        -fx-max-width: $toast-max-width;
+        -fx-background-color: $color-inverse-surface;
+        -fx-padding: $toast-padding;
+        -fx-spacing: $toast-element-gap; // HBox
+        @include shape-xs();
+        -fx-alignment: CENTER;
+
+        .rst-toast-content {
+            @include typeface-label-md($color-inverse-primary);
+            -fx-text-alignment: LEFT;
+            -fx-wrap-text: true;
+        }
+
+        .rst-close-button {
+            -fx-min-height: $toast-close-button-size;
+            -fx-min-width: $toast-close-button-size;
+            -fx-padding: $toast-close-button-padding;
+            -fx-background-color: transparent;
+            @include shape-full();
+            -fx-content-display: GRAPHIC_ONLY;
+
+            .rst-close-icon {
+                @extend .rst-icon-material-close;
+                -fx-pref-height: $toast-close-icon-size;
+                -fx-pref-width: $toast-close-icon-size;
+                -fx-background-color: $color-inverse-on-surface;
+            }
+        }
+    }
+}

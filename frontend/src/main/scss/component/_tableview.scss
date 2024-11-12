@@ -1,0 +1,114 @@
+/********************************
+*           Table View          *
+********************************/
+
+.rst-table-view {
+    $table-view-container-color: $color-surface;
+    $table-view-divider-color: $color-outline-variant;
+    $table-cell-padding-vertical: 6px;
+    $table-cell-padding-horizontal: 16px;
+    $table-column-header-cell-padding-vertical: 6px;
+    $table-view-header-cell-height: 52px;
+    $table-view-cell-height: $table-view-header-cell-height - 4px ;
+
+    -fx-background-color: $table-view-divider-color, $table-view-container-color;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 2;
+    @include shape-xs();
+
+    .table-cell {
+        -fx-min-height: $table-view-cell-height;
+        -fx-max-height: $table-view-cell-height;
+        -fx-pref-height: $table-view-cell-height;
+        -fx-border-color: $table-view-divider-color;
+        -fx-border-width: 0 1 0 0; // right border
+        -fx-padding: $table-cell-padding-vertical $table-cell-padding-horizontal;
+        @include typeface-body-md($color-on-surface);
+        -fx-alignment: CENTER_LEFT;
+    }
+
+    .column-header-background {
+        -fx-background-color: $table-view-container-color;
+    }
+
+     .column-header-background .filler {
+        -fx-background-color: $table-view-divider-color, $table-view-container-color;
+        -fx-background-insets: 0, 0 0 1 0; // bottom and right border
+     }
+
+    .column-header {
+        -fx-background-color: $table-view-divider-color, $table-view-container-color;
+        -fx-background-insets: 0, 0 1 1 0; // bottom and right border
+        -fx-min-height: $table-view-header-cell-height;
+        -fx-max-height: $table-view-header-cell-height;
+        -fx-pref-height: $table-view-header-cell-height;
+        -fx-padding: 0 $table-cell-padding-horizontal;
+
+        .label {
+            @include typeface-title-sm($color-on-surface);
+        }
+
+        .arrow {
+            -fx-pref-height: 1em;
+            -fx-pref-width: 1em;
+            -fx-shape: $icon-material-arrow-downward;
+            -fx-background-color: $color-on-surface;
+        }
+    }
+
+    .column-drag-header {
+        -fx-background: $color-secondary-container;
+        -fx-background-color: $color-secondary-container;
+        @include typeface-title-sm($color-on-surface);
+    }
+
+    .column-overlay {
+        -fx-background-color: $color-secondary-container;
+    }
+
+    .table-row-cell, .table-row-cell:odd {
+        -fx-min-height: $table-view-cell-height;
+        -fx-max-height: $table-view-cell-height;
+        -fx-pref-height: $table-view-cell-height;
+        -fx-background-color: $table-view-divider-color, $table-view-container-color;
+        -fx-background-insets: 0, 0 0 1 0;
+
+        &:selected {
+            -fx-background-color: $table-view-divider-color, $color-secondary-container;
+            -fx-background-insets: 0, 0 0 1 0;
+        }
+    }
+
+    .virtual-flow {
+        .corner {
+            -fx-background-color: darken($color-secondary-container, 5%);
+        }
+
+        .scroll-bar {
+            @extend .rst-scroll-bar;
+        }
+    }
+
+    .check-box-table-cell {
+        .check-box {
+            @extend .rst-check-box;
+        }
+    }
+
+    // row selection column styles
+    .column-header.rst-row-selection-column {
+        -fx-background-insets: 0, 0 0 1 0;
+    }
+
+    .rst-row-selection-column {
+        &.table-cell {
+            -fx-border-width: 0;
+            -fx-content-display: GRAPHIC_ONLY;
+            -fx-alignment: CENTER;
+        }
+
+        .check-box {
+            @extend .rst-check-box;
+        }
+    }
+}

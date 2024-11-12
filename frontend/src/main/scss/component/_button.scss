@@ -1,0 +1,246 @@
+$button-height: 40px;
+$button-padding-vertical: 0px;
+$button-padding-horizontal: 24px;
+$button-element-gap: 8px;
+$button-with-icon-padding-left: $button-padding-horizontal - $button-element-gap;
+$button-icon-size: 18px;
+
+$icon-button-size: $button-height;
+$icon-button-padding: 8px;
+$icon-button-icon-size: 24px;
+
+%rst-button{
+    -fx-min-height: $button-height;
+    -fx-max-height: $button-height;
+    -fx-pref-height: $button-height;
+    -fx-padding: $button-padding-vertical $button-padding-horizontal;
+    -fx-background-insets: 0;
+    @include shape-all(20px);
+    -fx-alignment: CENTER;
+    -fx-content-display: TEXT_ONLY;
+    @include typeface-label-lg();
+}
+
+@mixin rst-button-with-icon($button-class) {
+    @extend .#{$button-class};
+    -fx-padding: $button-padding-vertical $button-padding-horizontal $button-padding-vertical $button-with-icon-padding-left;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: $button-element-gap;
+}
+
+@mixin button-icon($size, $color, $color-disabled: $color-on-surface,
+                   $color-selected: $color-on-secondary-container) {
+
+    .rst-icon {
+        -fx-min-height: $size;
+        -fx-min-width: $size;
+        -fx-max-height: $size;
+        -fx-max-width: $size;
+        -fx-pref-height: $size;
+        -fx-pref-width: $size;
+        -fx-background-color: $color;
+    }
+
+    .ikonli-font-icon.rst-icon {
+        -fx-icon-size: $size;
+        -fx-icon-color: $color;
+    }
+
+    &:disabled, &:selected:disabled {
+        .rst-icon {
+            -fx-background-color: rgba($color-disabled, 0.38);
+        }
+
+        .ikonli-font-icon.rst-icon {
+            -fx-icon-color: rgba($color-disabled, 0.38)
+        }
+    }
+
+    &:selected {
+        .rst-icon {
+            -fx-background-color: $color-selected;
+        }
+
+        .ikonli-font-icon.rst-icon {
+            -fx-icon-color: $color-selected;
+        }
+    }
+}
+
+%rst-icon-button {
+    -fx-min-height: $icon-button-size;
+    -fx-max-height: $icon-button-size;
+    -fx-min-width: $icon-button-size;
+    -fx-max-width: $icon-button-size;
+    -fx-pref-height: $icon-button-size;
+    -fx-pref-width: $icon-button-size;
+    -fx-padding: $icon-button-padding;
+    @include shape-full();
+    -fx-content-display: GRAPHIC_ONLY;
+}
+
+/*********************************
+*         Filled Button          *
+*********************************/
+
+.rst-filled-button {
+    @extend %rst-button;
+    -fx-background-color: $color-primary;
+    -fx-text-fill: $color-on-primary;
+
+    &:disabled {
+        -fx-background-color: rgba($color-on-surface, 0.12);
+        -fx-text-fill: rgba($color-on-surface, 0.38);
+    }
+
+    &:hover {
+        @include elevate(1);
+        -fx-background-color: $color-primary, rgba($color-on-primary, 0.08);
+    }
+
+    &:armed, &:armed:default {
+        -fx-background-color: $color-primary, rgba($color-on-primary, 0.1);
+        @include elevate(0);
+    }
+}
+
+.rst-filled-button-with-icon {
+    @include rst-button-with-icon("rst-filled-button");
+    @include button-icon($size: $button-icon-size, $color: $color-on-primary);
+}
+
+/********************************
+*         Tonal Button          *
+*********************************/
+
+.rst-tonal-button {
+    @extend %rst-button;
+    -fx-background-color: $color-secondary-container;
+    -fx-text-fill: $color-on-secondary-container;
+
+    &:disabled {
+        -fx-background-color: rgba($color-on-surface, 0.12);
+        -fx-text-fill: rgba($color-on-surface, 0.38);
+    }
+
+    &:hover {
+        -fx-background-color: $color-secondary-container, rgba($color-on-primary, 0.08);
+        @include elevate(1);
+    }
+
+    &:armed, &:armed:default {
+        -fx-background-color: $color-secondary-container, rgba($color-on-secondary-container, 0.1);
+        @include elevate(0);
+    }
+}
+
+.rst-tonal-button-with-icon {
+   @include rst-button-with-icon("rst-tonal-button");
+   @include button-icon($size: $button-icon-size, $color: $color-on-secondary-container);
+}
+
+.rst-tonal-icon-button {
+    @extend %rst-icon-button;
+
+    -fx-background-color: $color-surface-container-highest;
+
+    @include button-icon($size: $icon-button-icon-size,
+                        $color: $color-on-surface-variant, $color-disabled: $color-on-surface,
+                        $color-selected: $color-on-secondary-container);
+
+    &:disabled, &:selected:disabled {
+        -fx-background-color: rgba($color-on-surface, 0.12);
+    }
+
+    &:hover {
+        -fx-background-color: $color-surface-container-highest, rgba($color-on-surface-variant, 0.08);
+    }
+
+    &:selected {
+        -fx-background-color: $color-secondary-container;
+        &:hover {
+            -fx-background-color: $color-secondary-container, rgba($color-on-secondary-container, 0.08);
+        }
+    }
+}
+
+/*********************************
+*         Outlined Button        *
+*********************************/
+
+.rst-outlined-button {
+    @extend %rst-button;
+    -fx-background-color: transparent;
+    -fx-border-color: $color-outline;
+    -fx-border-width: 1px;
+    -fx-text-fill: $color-primary;
+
+    &:disabled {
+        -fx-border-color: rgba($color-outline, 0.12);
+        -fx-text-fill: rgba($color-on-surface, 0.38);
+    }
+
+    &:hover {
+        -fx-background-color: rgba($color-primary, 0.08);
+    }
+
+    &:armed, &:armed:default {
+        -fx-background-color: rgba($color-primary, 0.1);
+    }
+}
+
+.rst-outlined-button-with-icon {
+    @include rst-button-with-icon('rst-outlined-button');
+    @include button-icon($size: $button-icon-size, $color: $color-primary);
+}
+
+/*********************************
+*         Text Button            *
+*********************************/
+
+.rst-text-button {
+    @extend %rst-button;
+    -fx-background-color: transparent;
+    -fx-text-fill: $color-primary;
+
+    &:disabled {
+        -fx-text-fill: rgba($color-on-surface, 0.38);
+    }
+
+    &:hover {
+        -fx-background-color: rgba($color-primary, 0.08);
+    }
+
+    &:armed, &:armed:default {
+        -fx-background-color: rgba($color-primary, 0.1);
+    }
+}
+
+.rst-text-button-with-icon {
+    @include rst-button-with-icon('rst-text-button');
+    @include button-icon($size: $button-icon-size, $color: $color-primary);
+}
+
+.rst-text-icon-button {
+    @extend %rst-icon-button;
+    -fx-background-color: transparent;
+
+    @include button-icon($size: $icon-button-icon-size,
+                             $color: $color-on-surface-variant, $color-disabled: $color-on-surface,
+                             $color-selected: $color-primary);
+
+    &:hover {
+        -fx-background-color: rgba($color-on-surface-variant, 0.08);
+    }
+
+    &:armed {
+        -fx-background-color: rgba($color-on-surface-variant, 0.12);
+    }
+
+    &:selected {
+        &:hover {
+            -fx-background-color: rgba($color-primary, 0.08);
+        }
+    }
+}
+

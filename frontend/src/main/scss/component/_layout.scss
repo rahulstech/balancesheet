@@ -1,0 +1,205 @@
+/*********************************
+*           Scroll Bar           *
+*********************************/
+
+$scroll-bar-size: 10px;
+$arrow-size: $scroll-bar-size - 3px;
+$thumb-size: $scroll-bar-size - 2px;
+
+// Utility mixin for common thumb styles
+@mixin scroll-thumb {
+    -fx-background-color: $color-on-secondary-container;
+}
+
+// Utility mixin for increment and decrement buttons
+@mixin scroll-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 2px;
+}
+
+// Utility mixin for arrow buttons (with hover effect)
+@mixin scroll-arrow {
+    -fx-pref-width: $arrow-size;
+    -fx-pref-height: $arrow-size;
+    -fx-background-color: rgba($color-on-secondary-container, 0.38);
+
+    &:hover {
+        -fx-background-color: $color-on-secondary-container;
+    }
+}
+
+// Scroll Bar mixin
+@mixin scroll-bar {
+    -fx-background-color: $color-secondary-container;
+
+    .thumb {
+        @include scroll-thumb;
+    }
+
+    .increment-button {
+        @include scroll-button;
+
+        .increment-arrow {
+            @include scroll-arrow; // Base arrow style without shape
+        }
+    }
+
+    .decrement-button {
+        @include scroll-button;
+
+        .decrement-arrow {
+            @include scroll-arrow; // Base arrow style without shape
+        }
+    }
+
+    // Horizontal scrollbar specific styles
+    &:horizontal {
+        -fx-max-height: $scroll-bar-size;
+        -fx-pref-height: $scroll-bar-size;
+
+        .thumb {
+            -fx-max-height: $scroll-bar-size;
+            -fx-pref-height: $scroll-bar-size;
+        }
+
+        .increment-arrow {
+            -fx-shape: $icon-material-arrow-right;
+        }
+
+        .decrement-arrow {
+            -fx-shape: $icon-material-arrow-left;
+        }
+    }
+
+    // Vertical scrollbar specific styles
+    &:vertical {
+        -fx-max-width: $scroll-bar-size;
+        -fx-pref-width: $scroll-bar-size;
+
+        .thumb {
+            -fx-max-width: $scroll-bar-size;
+            -fx-pref-width: $scroll-bar-size;
+        }
+
+        .increment-arrow {
+            -fx-shape: $icon-material-arrow-drop-down;
+        }
+
+        .decrement-arrow {
+            -fx-shape: $icon-material-arrow-drop-up;
+        }
+    }
+}
+
+// Scrollbar styles
+.rst-scroll-bar {
+    @include scroll-bar;
+}
+
+/*********************************
+*           Scroll Pane          *
+*********************************/
+
+.rst-scroll-pane {
+
+    -fx-background-color: transparent;
+
+    .viewport {
+        -fx-background-color: transparent;
+    }
+
+    .scroll-bar {
+        @include scroll-bar;
+    }
+
+    .corner {
+        -fx-background-color: darken($color-secondary-container, 5%);
+    }
+}
+
+/*********************************
+*           Titled Pane          *
+*********************************/
+
+.rst-titled-pane {
+
+    $titled-pane-title-height: 32px;
+    $titled-pane-title-padding: 16px;
+
+    .content {
+        -fx-padding: 0;
+        -fx-background-color: $color-surface-container-high;
+        -fx-background-insets: 0;
+        -fx-border-color: transparent;
+        -fx-border-width: 0;
+    }
+
+    .scroll-pane {
+        @extend .rst-scroll-pane;
+        .view-port {
+            -fx-padding: 0;
+        }
+    }
+
+    .title {
+        -fx-min-height: $titled-pane-title-height;
+        -fx-max-height: $titled-pane-title-height;
+        -fx-pref-height: $titled-pane-title-height;
+        -fx-padding:  $titled-pane-title-padding;
+        -fx-background-color: $color-surface-container-high;
+
+        .arrow-button {
+            .arrow {
+                -fx-shape: $icon-material-keyboard-arrow-down;
+                -fx-background-color: $color-on-surface;
+                -fx-background-insets: 0;
+            }
+        }
+    }
+
+    &:focused {
+        .arrow {
+            -fx-background-color: $color-on-surface;
+            -fx-background-insets: 0;
+            -fx-effect: none;
+        }
+    }
+
+}
+
+.rst-expandable-section {
+     @extend .rst-titled-pane;
+
+    .title {
+        -fx-max-height: 0px;
+        -fx-padding: 0px;
+        -fx-opacity: 0;
+        -fx-cursor: NONE;
+    }
+}
+
+/*********************************
+*        Description Pane        *
+*********************************/
+
+.rst-description-pane {
+
+    .rst-label-text {
+        @include typeface-body-md($color-on-surface);
+    }
+
+    .rst-supporting-text {
+        @include typeface-body-sm($color-on-surface);
+    }
+
+    &:disabled {
+        .rst-label-text, .rst-supporting-text {
+            @include text-fill(rgba($color-on-surface, 0.38));
+        }
+    }
+
+    .rst-label-text:error, .rst-supporting-text:error {
+        @include text-fill($color-error);
+    }
+}

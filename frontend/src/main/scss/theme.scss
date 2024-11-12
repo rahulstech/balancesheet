@@ -1,0 +1,33 @@
+@import 'import/colors';
+@import 'import/shapes';
+@import 'import/typefaces';
+@import 'import/elevations';
+@import 'import/icons';
+
+* {
+    -color-surface-container-low: $color-surface-container-low;
+    -color-surface-container: $color-surface-container;
+    -color-surface-container-high: $color-surface-container-high;
+
+    -fx-highlight-fill: $color-secondary-container;
+    -fx-highlight-text-fill: $color-on-secondary-container;
+
+    &:disabled {
+        -fx-opacity: 1;
+    }
+}
+
+.root {
+    -fx-background-color: $color-background;
+}
+
+@import 'component/button';
+@import 'component/togglebutton';
+@import 'component/chip';
+@import 'component/layout';
+@import 'component/textfield';
+@import 'component/popup';
+@import 'component/combobox';
+@import 'component/pagination';
+@import 'component/tableview';
+@import 'component/navigation';

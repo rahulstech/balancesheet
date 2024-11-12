@@ -1,0 +1,292 @@
+$drop-down-height: 48px;
+$drop-down-padding-horizontal: 12px;
+$drop-down-padding-vertical: 6px;
+$drop-down-item-padding-horizontal: 12px;
+$drop-down-item-padding-vertical: 6px;
+$drop-down-arrow-button-size: 24px;
+
+/*********************************
+*    Combo Box and Choice Box    *
+*********************************/
+
+.rst-drop-down {
+    -fx-min-height: $drop-down-height;
+    -fx-pref-height: $drop-down-height;
+    -fx-padding: $drop-down-padding-vertical $drop-down-padding-horizontal;
+    -fx-background-color: transparent;
+    -fx-border-color: $color-outline;
+    -fx-border-width: 1px;
+    @include shape-sm();
+
+    // Label and ListCell styling
+    & > .list-cell {
+        -fx-padding: 0;
+        @include typeface-body-md($color-outline);
+    }
+
+    // Arrow button and open button shared styles
+    .arrow-button {
+        -fx-min-height: $drop-down-arrow-button-size;
+        -fx-min-width: $drop-down-arrow-button-size;
+        -fx-pref-height: $drop-down-arrow-button-size;
+        -fx-pref-width: $drop-down-arrow-button-size;
+        -fx-padding: $drop-down-item-padding-vertical $drop-down-item-padding-horizontal;
+        @include shape-full();
+        -fx-content-display: GRAPHIC_ONLY;
+
+        // Arrow icon styling
+        .arrow {
+            -fx-background-color: $color-outline;
+        }
+    }
+
+    // ListView styling
+    .list-view {
+        -fx-background-color: transparent;
+        -fx-padding: 0;
+        -fx-background-insets: 0;
+        @include elevate(2);
+
+        // Placeholder styling
+        .placeholder > .label {
+            -fx-min-height: $drop-down-height;
+            -fx-padding: $drop-down-padding-vertical $drop-down-padding-horizontal;
+            -fx-background: $color-surface;
+        }
+
+        // ListCell styling
+        .list-cell {
+            -fx-min-height: $drop-down-height;
+            -fx-padding: $drop-down-item-padding-vertical $drop-down-item-padding-horizontal;
+            -fx-background: $color-surface;
+            @include typeface-body-lg($color-on-surface);
+
+            &:filled {
+                &:hover {
+                    -fx-background-color: $color-surface, rgba($color-on-surface, 0.08);
+                    -fx-background-insets: 0, 0;
+                }
+
+                &:focused {
+                    -fx-background: $color-surface;
+                    -fx-background-insets: 0;
+                }
+
+                &:selected {
+                    -fx-background-color: $color-secondary-container;
+                    -fx-text-fill: $color-on-secondary-container;
+
+                    &:hover {
+                        -fx-background-color: $color-secondary-container, rgba($color-on-surface, 0.08);
+                        -fx-background-insets: 0, 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &:disabled {
+        -fx-border-color: rgba($color-on-surface, 0.12);
+
+        & > .list-cell {
+            -fx-text-fill: rgba($color-on-surface, 0.38);
+        }
+
+        .arrow-button:disabled .arrow {
+            -fx-background-color: rgba($color-on-surface, 0.38);
+        }
+    }
+
+    // Focus state styling for the ComboBox
+    &:focused {
+        -fx-border-color: $color-primary;
+        -fx-border-width: 2px;
+        -fx-text-fill: $color-on-surface;
+
+        & > .list-cell {
+            -fx-text-fill: $color-on-surface;
+        }
+
+        .arrow-button > .arrow {
+            -fx-background-color: $color-primary;
+        }
+
+        &:error {
+            .arrow-button > .arrow {
+                -fx-background-color: $color-error;
+            }
+        }
+    }
+
+    // Hover state for buttons
+    &:hover .arrow-button {
+        -fx-background-color: rgba($color-on-surface, 0.08);
+    }
+
+    &:error {
+        -fx-border-color: $color-error;
+    }
+}
+
+/*********************************
+*         Date Picker            *
+*********************************/
+
+.rst-date-picker {
+    -fx-min-height: $drop-down-height;
+    -fx-padding: $drop-down-padding-vertical $drop-down-padding-horizontal;
+    -fx-background-color: transparent;
+    -fx-border-color: $color-outline;
+    -fx-border-width: 1px;
+    @include shape-sm();
+
+    .text-field {
+        -fx-pref-width: 180px;
+        -fx-background-color: transparent;
+        -fx-padding: 0;
+        @include typeface-body-md($color-outline);
+        -fx-prompt-text-fill: $color-outline;
+    }
+
+    .arrow-button {
+        -fx-pref-height: 24px;
+        -fx-pref-width: 20px;
+        -fx-padding: 6px 10px 6px 8px;
+        -fx-background-color: transparent;
+        @include shape-full();
+        -fx-content-display: GRAPHIC_ONLY;
+
+        .arrow {
+            -fx-pref-height: 14px;
+            -fx-pref-width: 14px;
+            -fx-shape: $icon-material-calendar-month;
+            -fx-background-color: $color-outline;
+        }
+    }
+
+    &:disabled {
+        -fx-border-color: rgba($color-on-surface, 0.12);
+
+        .text-field {
+            -fx-text-fill: rgba($color-on-surface, 0.38);
+        }
+
+        .arrow-button:disabled .arrow {
+            -fx-background-color: rgba($color-on-surface, 0.38);
+        }
+    }
+
+    &:hover {
+        .arrow-button {
+           -fx-background-color: rgba($color-on-surface, 0.08);
+        }
+    }
+
+    &:focused {
+        -fx-border-color: $color-primary;
+        -fx-border-width: 2px;
+
+        .text-field {
+            -fx-text-fill: $color-on-surface;
+        }
+
+        .arrow-button > .arrow {
+            -fx-background-color: $color-primary;
+        }
+
+        &:error {
+            .arrow-button > .arrow {
+                -fx-background-color: $color-error;
+            }
+        }
+    }
+
+    &:error {
+        -fx-border-color: $color-error;
+    }
+
+    .date-picker-popup {
+        -fx-background-color: $color-surface-container-high;
+        @include elevate(3);
+        @include shape-md();
+        @include typeface-body-md();
+
+        .month-year-pane, .calendar-grid {
+            -fx-background-color: $color-surface-container-high;
+        }
+
+        .spinner {
+            & > .label {
+                -fx-text-fill: $color-on-surface-variant;
+            }
+
+            & > .button {
+                -fx-padding: 6px 12px;
+                @include shape-full();
+
+                & > .left-arrow, & > .right-arrow {
+                    -fx-pref-height: 10px;
+                    -fx-pref-width: 10px;
+                    -fx-background-color: $color-on-surface-variant;
+                    -fx-shape: $icon-material-chevron-left;
+                }
+
+                & > .right-arrow {
+                    -fx-shape: $icon-material-chevron-right;
+                }
+
+                &:hover {
+                    -fx-background-color: rgba($color-on-surface, 0.08);
+                }
+
+                &:focused {
+                    -fx-background-color: rgba($color-on-surface, 0.12);
+                }
+            }
+        }
+
+        .date-cell {
+            -fx-padding: 0;
+            -fx-text-fill: $color-on-surface;
+        }
+
+        .day-name-cell {
+            -fx-padding: 0 4px;
+        }
+
+        .day-cell {
+            -fx-pref-height: 50px;
+            -fx-pref-width: 48px;
+            -fx-padding: 0;
+            -fx-background-color: transparent;
+            -fx-border-color: transparent;
+            -fx-border-width: 0px;
+            @include shape-full();
+
+            &:hover {
+                -fx-background-color: $color-primary;
+                -fx-text-fill: $color-on-primary;
+            }
+        }
+
+        .selected {
+            -fx-background-color: $color-primary;
+            -fx-text-fill: $color-on-primary;
+        }
+
+        .today {
+            -fx-border-color: $color-primary;
+            -fx-border-width: 1px;
+            -fx-text-fill: $color-primary;
+
+            &:hover, &.selected, &.selected:hover {
+                -fx-border-width: 0;
+                -fx-text-fill: $color-on-primary;
+            }
+        }
+
+        .previous-month, .next-month {
+            -fx-text-fill: $color-outline-variant;
+        }
+    }
+}

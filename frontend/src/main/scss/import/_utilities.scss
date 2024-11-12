@@ -1,0 +1,15 @@
+@mixin border($width: $outline-width, $color: $color-outline) {
+    -fx-border-color: $color;
+    -fx-border-width: $width;
+    -fx-border-insets: 0px;
+}
+
+@function map-get-else-from($map, $key, $defaultValues) {
+    @if map-has-key($map, $key) {
+        @return map-get($map,$key);
+    }
+    @if map-has-key($defaultValues, $key) {
+        @return map-get($defaultValues, $key);
+    }
+    @error "#{$key} found neither in $map nor in $defaultValues";
+}

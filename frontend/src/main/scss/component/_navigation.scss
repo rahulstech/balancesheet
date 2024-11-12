@@ -1,0 +1,45 @@
+///////////////////////////////////
+///       Navigation Rail      ///
+/////////////////////////////////
+
+.rst-navigation-rail {
+
+    $nav-item-size: 56px;
+    $nav-item-icon-size: 24px;
+    $nav-rail-padding: 8px;
+
+    -fx-max-width: 80px;
+    -fx-padding: 0 $nav-rail-padding;
+    -fx-background-color: $color-surface-container;
+    -fx-alignment: CENTER;
+    -fx-spacing: $nav-rail-padding;
+
+    .rst-nav-item {
+        @extend .rst-text-button-with-icon;
+        -fx-min-height: $nav-item-size;
+        -fx-max-height: $nav-item-size;
+        -fx-pref-height: $nav-item-size;
+//         -fx-min-width: $nav-item-size;
+//         -fx-max-width: $nav-item-size;
+//         -fx-pref-width: $nav-item-size;
+        -fx-padding: 4px 12px;
+        -fx-content-display: TOP;
+        @include shape-md();
+        @include typeface-label-md($fill: $color-on-surface-variant);
+
+        .ikonli-font-icon.rst-icon {
+            -fx-icon-size: $nav-item-icon-size;
+            -fx-icon-color: $color-on-surface-variant;
+        }
+
+        &:selected {
+            -fx-background-color: $color-secondary-container;
+            -fx-text-fill: $color-on-secondary-container;
+
+            .ikonli-font-icon.rst-icon {
+                -fx-icon-color: $color-on-secondary-container;
+            }
+        }
+    }
+
+}

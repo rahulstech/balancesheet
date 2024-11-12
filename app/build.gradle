@@ -1,0 +1,17 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainModule = 'app'
+    mainClass = 'rahulstech.jfx.balancesheet.BalanceSheetApp'
+}
+
+dependencies {
+
+    implementation project(':backend:balancesheetdb')
+
+    implementation project(':core')
+
+    implementation project(':frontend')
+}

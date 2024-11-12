@@ -1,0 +1,71 @@
+/*********************************
+*         Pagination             *
+*********************************/
+
+.rst-pagination {
+
+    $button-size: 36px;
+    $button-padding: 8px;
+    $button-icon-size: 12px;
+
+    $drop-down-height: 36px;
+    $drop-down-button-size: floor($drop-down-height / 2);
+    $drop-down-button-padding-horizontal: floor($drop-down-button-size / 3);
+    $drop-down-button-padding-vertical: floor($drop-down-button-padding-horizontal / 2);
+
+    -fx-padding: 8px 12px;
+    -fx-spacing: 12px; // HBox
+    -fx-alignment: CENTER_RIGHT; // HBox
+
+    & > .first-page-button, .previous-page-button, .next-page-button, .last-page-button {
+        @extend .rst-text-icon-button;
+        -fx-min-height: $button-size;
+        -fx-min-width: $button-size;
+        -fx-pref-height: $button-size;
+        -fx-pref-width: $button-size;
+        -fx-padding: $button-padding;
+
+        .rst-icon.arrow {
+            -fx-min-height: $button-icon-size;
+            -fx-min-width: $button-icon-size;
+            -fx-pref-height: $button-icon-size;
+            -fx-pref-width: $button-icon-size;
+        }
+    }
+
+    .first-page-button .arrow {
+        -fx-shape: $icon-material-first-page;
+    }
+
+    .previous-page-button .arrow {
+        -fx-shape: $icon-material-chevron-left;
+    }
+
+    .next-page-button .arrow {
+        -fx-shape: $icon-material-chevron-right;
+    }
+
+    .last-page-button .arrow {
+        -fx-shape: $icon-material-last-page;
+    }
+
+    .max-entries-label, .progress-label {
+        @include typeface-label-md($color-on-surface);
+    }
+
+    .max-entries {
+
+
+        @extend .rst-drop-down;
+        -fx-min-height: $drop-down-height;
+        -fx-pref-height: $drop-down-height;
+
+        .arrow-button {
+            -fx-min-height: $drop-down-button-size;
+            -fx-min-width: $drop-down-button-size;
+            -fx-pref-height: $drop-down-button-size;
+            -fx-pref-width: $drop-down-button-size;
+            -fx-padding: $drop-down-button-padding-vertical $drop-down-button-padding-horizontal;
+        }
+    }
+}

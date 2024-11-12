@@ -1,0 +1,1898 @@
+.shape-node {
+  -fx-background-radius: 0;
+  -fx-border-radius: 0;
+}
+
+.shape-xs {
+  -fx-background-radius: 4px;
+  -fx-border-radius: 4px;
+}
+
+.shape-sm {
+  -fx-background-radius: 6px;
+  -fx-border-radius: 6px;
+}
+
+.shape-md {
+  -fx-background-radius: 12px;
+  -fx-border-radius: 12px;
+}
+
+.shape-lg {
+  -fx-background-radius: 16px;
+  -fx-border-radius: 16px;
+}
+
+.shape-xl {
+  -fx-background-radius: 28px;
+  -fx-border-radius: 28px;
+}
+
+.shape-full {
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+}
+
+.elevation-0 {
+  -fx-effect: none;
+}
+
+.elevation-1 {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.5, 0, 1);
+}
+
+.elevation-2 {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 7, 0.5, 0, 2);
+}
+
+.elevation-3 {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 9, 0.5, 0, 3);
+}
+
+.elevation-4 {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 11, 0.5, 0, 4);
+}
+
+.elevation-5 {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 13, 0.5, 0, 5);
+}
+
+/**************************
+*        Icon Class       *
+***************************/
+.rst-icon-material-calendar-month {
+  -fx-shape: "M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z";
+}
+
+.rst-icon-material-chevron-left {
+  -fx-shape: "M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z";
+}
+
+.rst-icon-material-chevron-right {
+  -fx-shape: "M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z";
+}
+
+.rst-icon-material-close, .rst-toast .rst-toast-main .rst-close-button .rst-close-icon {
+  -fx-shape: "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z";
+}
+
+.rst-icon-material-refresh {
+  -fx-shape: "M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z";
+}
+
+.rst-icon-material-plus {
+  -fx-shape: "M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z";
+}
+
+.rst-icon-material-delete {
+  -fx-shape: "M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z";
+}
+
+.rst-icon-material-pencil {
+  -fx-shape: "M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z";
+}
+
+.rst-icon-material-arrow-drop-down {
+  -fx-shape: "M480-360 280-560h400L480-360Z";
+}
+
+.rst-icon-material-arrow-drop-up {
+  -fx-shape: "m280-400 200-200 200 200H280Z";
+}
+
+.rst-icon-material-arrow-right {
+  -fx-shape: "M400-280v-400l200 200-200 200Z";
+}
+
+.rst-icon-material-arrow-left {
+  -fx-shape: "M560-280 360-480l200-200v400Z";
+}
+
+.rst-icon-material-first-page {
+  -fx-shape: "M240-240v-480h80v480h-80Zm440 0L440-480l240-240 56 56-184 184 184 184-56 56Z";
+}
+
+.rst-icon-material-last-page {
+  -fx-shape: "m280-240-56-56 184-184-184-184 56-56 240 240-240 240Zm360 0v-480h80v480h-80Z";
+}
+
+.rst-icon-material-arrow-downward {
+  -fx-shape: "M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z";
+}
+
+.rst-icon-material-cancel {
+  -fx-shape: "m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z";
+}
+
+.rst-icon-material-search {
+  -fx-shape: "M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z";
+}
+
+.rst-icon-material-keyboard-arrow-down {
+  -fx-shape: "M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z";
+}
+
+.rst-icon-material-check {
+  -fx-shape: "M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z";
+}
+
+.rst-icon-material-cancel-filled {
+  -fx-shape: "m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z";
+}
+
+* {
+  -color-surface-container-low: rgb(244, 243, 249);
+  -color-surface-container: rgb(239, 237, 244);
+  -color-surface-container-high: rgb(233, 231, 238);
+  -fx-highlight-fill: rgb(219, 224, 255);
+  -fx-highlight-text-fill: rgb(63, 70, 98);
+}
+*:disabled {
+  -fx-opacity: 1;
+}
+
+.root {
+  -fx-background-color: rgb(250, 248, 255);
+}
+
+.rst-text-button, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button, .rst-dialog .rst-dialog-main .rst-dialog-buttonbar .rst-dialog-button, .rst-text-button-with-icon, .rst-navigation-rail .rst-nav-item, .rst-outlined-button, .rst-outlined-button-with-icon, .rst-tonal-button, .rst-choice-button, .rst-tonal-button-with-icon, .rst-filled-button, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:default, .rst-filled-button-with-icon {
+  -fx-min-height: 40px;
+  -fx-max-height: 40px;
+  -fx-pref-height: 40px;
+  -fx-padding: 0px 24px;
+  -fx-background-insets: 0;
+  -fx-background-radius: 20px;
+  -fx-border-radius: 20px;
+  -fx-alignment: CENTER;
+  -fx-content-display: TEXT_ONLY;
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.1pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+}
+
+.rst-text-icon-button, .rst-pagination > .first-page-button, .rst-pagination .previous-page-button, .rst-pagination .next-page-button, .rst-pagination .last-page-button, .rst-tonal-icon-button {
+  -fx-min-height: 40px;
+  -fx-max-height: 40px;
+  -fx-min-width: 40px;
+  -fx-max-width: 40px;
+  -fx-pref-height: 40px;
+  -fx-pref-width: 40px;
+  -fx-padding: 8px;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+  -fx-content-display: GRAPHIC_ONLY;
+}
+
+/*********************************
+*         Filled Button          *
+*********************************/
+.rst-filled-button, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:default, .rst-filled-button-with-icon {
+  -fx-background-color: rgb(48, 70, 138);
+  -fx-text-fill: rgb(255, 255, 255);
+}
+.rst-filled-button:disabled, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:disabled:default, .rst-filled-button-with-icon:disabled {
+  -fx-background-color: rgba(26, 27, 32, 0.12);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-filled-button:hover, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:hover:default, .rst-filled-button-with-icon:hover {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.5, 0, 1);
+  -fx-background-color: rgb(48, 70, 138), rgba(255, 255, 255, 0.08);
+}
+.rst-filled-button:armed, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:armed:default, .rst-filled-button-with-icon:armed, .rst-filled-button:armed:default {
+  -fx-background-color: rgb(48, 70, 138), rgba(255, 255, 255, 0.1);
+  -fx-effect: none;
+}
+
+.rst-filled-button-with-icon {
+  -fx-padding: 0px 24px 0px 16px;
+  -fx-content-display: LEFT;
+  -fx-graphic-text-gap: 8px;
+}
+.rst-filled-button-with-icon .rst-icon {
+  -fx-min-height: 18px;
+  -fx-min-width: 18px;
+  -fx-max-height: 18px;
+  -fx-max-width: 18px;
+  -fx-pref-height: 18px;
+  -fx-pref-width: 18px;
+  -fx-background-color: rgb(255, 255, 255);
+}
+.rst-filled-button-with-icon .ikonli-font-icon.rst-icon {
+  -fx-icon-size: 18px;
+  -fx-icon-color: rgb(255, 255, 255);
+}
+.rst-filled-button-with-icon:disabled .rst-icon, .rst-filled-button-with-icon:selected:disabled .rst-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+}
+.rst-filled-button-with-icon:disabled .ikonli-font-icon.rst-icon, .rst-filled-button-with-icon:selected:disabled .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgba(26, 27, 32, 0.38);
+}
+.rst-filled-button-with-icon:selected .rst-icon {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-filled-button-with-icon:selected .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgb(63, 70, 98);
+}
+
+/********************************
+*         Tonal Button          *
+*********************************/
+.rst-tonal-button, .rst-choice-button, .rst-tonal-button-with-icon {
+  -fx-background-color: rgb(219, 224, 255);
+  -fx-text-fill: rgb(63, 70, 98);
+}
+.rst-tonal-button:disabled, .rst-choice-button:disabled, .rst-tonal-button-with-icon:disabled {
+  -fx-background-color: rgba(26, 27, 32, 0.12);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-tonal-button:hover, .rst-choice-button:hover, .rst-tonal-button-with-icon:hover {
+  -fx-background-color: rgb(219, 224, 255), rgba(255, 255, 255, 0.08);
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.5, 0, 1);
+}
+.rst-tonal-button:armed, .rst-choice-button:armed, .rst-tonal-button-with-icon:armed, .rst-tonal-button:armed:default {
+  -fx-background-color: rgb(219, 224, 255), rgba(63, 70, 98, 0.1);
+  -fx-effect: none;
+}
+
+.rst-tonal-button-with-icon {
+  -fx-padding: 0px 24px 0px 16px;
+  -fx-content-display: LEFT;
+  -fx-graphic-text-gap: 8px;
+}
+.rst-tonal-button-with-icon .rst-icon {
+  -fx-min-height: 18px;
+  -fx-min-width: 18px;
+  -fx-max-height: 18px;
+  -fx-max-width: 18px;
+  -fx-pref-height: 18px;
+  -fx-pref-width: 18px;
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-tonal-button-with-icon .ikonli-font-icon.rst-icon {
+  -fx-icon-size: 18px;
+  -fx-icon-color: rgb(63, 70, 98);
+}
+.rst-tonal-button-with-icon:disabled .rst-icon, .rst-tonal-button-with-icon:selected:disabled .rst-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+}
+.rst-tonal-button-with-icon:disabled .ikonli-font-icon.rst-icon, .rst-tonal-button-with-icon:selected:disabled .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgba(26, 27, 32, 0.38);
+}
+.rst-tonal-button-with-icon:selected .rst-icon {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-tonal-button-with-icon:selected .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgb(63, 70, 98);
+}
+
+.rst-tonal-icon-button {
+  -fx-background-color: rgb(227, 225, 232);
+}
+.rst-tonal-icon-button .rst-icon {
+  -fx-min-height: 24px;
+  -fx-min-width: 24px;
+  -fx-max-height: 24px;
+  -fx-max-width: 24px;
+  -fx-pref-height: 24px;
+  -fx-pref-width: 24px;
+  -fx-background-color: rgb(68, 70, 80);
+}
+.rst-tonal-icon-button .ikonli-font-icon.rst-icon {
+  -fx-icon-size: 24px;
+  -fx-icon-color: rgb(68, 70, 80);
+}
+.rst-tonal-icon-button:disabled .rst-icon, .rst-tonal-icon-button:selected:disabled .rst-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+}
+.rst-tonal-icon-button:disabled .ikonli-font-icon.rst-icon, .rst-tonal-icon-button:selected:disabled .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgba(26, 27, 32, 0.38);
+}
+.rst-tonal-icon-button:selected .rst-icon {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-tonal-icon-button:selected .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgb(63, 70, 98);
+}
+.rst-tonal-icon-button:disabled, .rst-tonal-icon-button:selected:disabled {
+  -fx-background-color: rgba(26, 27, 32, 0.12);
+}
+.rst-tonal-icon-button:hover {
+  -fx-background-color: rgb(227, 225, 232), rgba(68, 70, 80, 0.08);
+}
+.rst-tonal-icon-button:selected {
+  -fx-background-color: rgb(219, 224, 255);
+}
+.rst-tonal-icon-button:selected:hover {
+  -fx-background-color: rgb(219, 224, 255), rgba(63, 70, 98, 0.08);
+}
+
+/*********************************
+*         Outlined Button        *
+*********************************/
+.rst-outlined-button, .rst-outlined-button-with-icon {
+  -fx-background-color: transparent;
+  -fx-border-color: rgb(117, 118, 130);
+  -fx-border-width: 1px;
+  -fx-text-fill: rgb(48, 70, 138);
+}
+.rst-outlined-button:disabled, .rst-outlined-button-with-icon:disabled {
+  -fx-border-color: rgba(117, 118, 130, 0.12);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-outlined-button:hover, .rst-outlined-button-with-icon:hover {
+  -fx-background-color: rgba(48, 70, 138, 0.08);
+}
+.rst-outlined-button:armed, .rst-outlined-button-with-icon:armed, .rst-outlined-button:armed:default {
+  -fx-background-color: rgba(48, 70, 138, 0.1);
+}
+
+.rst-outlined-button-with-icon {
+  -fx-padding: 0px 24px 0px 16px;
+  -fx-content-display: LEFT;
+  -fx-graphic-text-gap: 8px;
+}
+.rst-outlined-button-with-icon .rst-icon {
+  -fx-min-height: 18px;
+  -fx-min-width: 18px;
+  -fx-max-height: 18px;
+  -fx-max-width: 18px;
+  -fx-pref-height: 18px;
+  -fx-pref-width: 18px;
+  -fx-background-color: rgb(48, 70, 138);
+}
+.rst-outlined-button-with-icon .ikonli-font-icon.rst-icon {
+  -fx-icon-size: 18px;
+  -fx-icon-color: rgb(48, 70, 138);
+}
+.rst-outlined-button-with-icon:disabled .rst-icon, .rst-outlined-button-with-icon:selected:disabled .rst-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+}
+.rst-outlined-button-with-icon:disabled .ikonli-font-icon.rst-icon, .rst-outlined-button-with-icon:selected:disabled .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgba(26, 27, 32, 0.38);
+}
+.rst-outlined-button-with-icon:selected .rst-icon {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-outlined-button-with-icon:selected .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgb(63, 70, 98);
+}
+
+/*********************************
+*         Text Button            *
+*********************************/
+.rst-text-button, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button, .rst-dialog .rst-dialog-main .rst-dialog-buttonbar .rst-dialog-button, .rst-text-button-with-icon, .rst-navigation-rail .rst-nav-item {
+  -fx-background-color: transparent;
+  -fx-text-fill: rgb(48, 70, 138);
+}
+.rst-text-button:disabled, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:disabled, .rst-dialog .rst-dialog-main .rst-dialog-buttonbar .rst-dialog-button:disabled, .rst-text-button-with-icon:disabled, .rst-navigation-rail .rst-nav-item:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-text-button:hover, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:hover, .rst-dialog .rst-dialog-main .rst-dialog-buttonbar .rst-dialog-button:hover, .rst-text-button-with-icon:hover, .rst-navigation-rail .rst-nav-item:hover {
+  -fx-background-color: rgba(48, 70, 138, 0.08);
+}
+.rst-text-button:armed, .rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:armed, .rst-dialog .rst-dialog-main .rst-dialog-buttonbar .rst-dialog-button:armed, .rst-text-button-with-icon:armed, .rst-navigation-rail .rst-nav-item:armed, .rst-text-button:armed:default {
+  -fx-background-color: rgba(48, 70, 138, 0.1);
+}
+
+.rst-text-button-with-icon, .rst-navigation-rail .rst-nav-item {
+  -fx-padding: 0px 24px 0px 16px;
+  -fx-content-display: LEFT;
+  -fx-graphic-text-gap: 8px;
+}
+.rst-text-button-with-icon .rst-icon, .rst-navigation-rail .rst-nav-item .rst-icon {
+  -fx-min-height: 18px;
+  -fx-min-width: 18px;
+  -fx-max-height: 18px;
+  -fx-max-width: 18px;
+  -fx-pref-height: 18px;
+  -fx-pref-width: 18px;
+  -fx-background-color: rgb(48, 70, 138);
+}
+.rst-text-button-with-icon .ikonli-font-icon.rst-icon, .rst-navigation-rail .rst-nav-item .ikonli-font-icon.rst-icon {
+  -fx-icon-size: 18px;
+  -fx-icon-color: rgb(48, 70, 138);
+}
+.rst-text-button-with-icon:disabled .rst-icon, .rst-navigation-rail .rst-nav-item:disabled .rst-icon, .rst-text-button-with-icon:selected:disabled .rst-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+}
+.rst-text-button-with-icon:disabled .ikonli-font-icon.rst-icon, .rst-navigation-rail .rst-nav-item:disabled .ikonli-font-icon.rst-icon, .rst-text-button-with-icon:selected:disabled .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgba(26, 27, 32, 0.38);
+}
+.rst-text-button-with-icon:selected .rst-icon, .rst-navigation-rail .rst-nav-item:selected .rst-icon {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-text-button-with-icon:selected .ikonli-font-icon.rst-icon, .rst-navigation-rail .rst-nav-item:selected .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgb(63, 70, 98);
+}
+
+.rst-text-icon-button, .rst-pagination > .first-page-button, .rst-pagination .previous-page-button, .rst-pagination .next-page-button, .rst-pagination .last-page-button {
+  -fx-background-color: transparent;
+}
+.rst-text-icon-button .rst-icon, .rst-pagination > .first-page-button .rst-icon, .rst-pagination .previous-page-button .rst-icon, .rst-pagination .next-page-button .rst-icon, .rst-pagination .last-page-button .rst-icon {
+  -fx-min-height: 24px;
+  -fx-min-width: 24px;
+  -fx-max-height: 24px;
+  -fx-max-width: 24px;
+  -fx-pref-height: 24px;
+  -fx-pref-width: 24px;
+  -fx-background-color: rgb(68, 70, 80);
+}
+.rst-text-icon-button .ikonli-font-icon.rst-icon, .rst-pagination > .first-page-button .ikonli-font-icon.rst-icon, .rst-pagination .previous-page-button .ikonli-font-icon.rst-icon, .rst-pagination .next-page-button .ikonli-font-icon.rst-icon, .rst-pagination .last-page-button .ikonli-font-icon.rst-icon {
+  -fx-icon-size: 24px;
+  -fx-icon-color: rgb(68, 70, 80);
+}
+.rst-text-icon-button:disabled .rst-icon, .rst-pagination > .first-page-button:disabled .rst-icon, .rst-pagination .previous-page-button:disabled .rst-icon, .rst-pagination .next-page-button:disabled .rst-icon, .rst-pagination .last-page-button:disabled .rst-icon, .rst-text-icon-button:selected:disabled .rst-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+}
+.rst-text-icon-button:disabled .ikonli-font-icon.rst-icon, .rst-pagination > .first-page-button:disabled .ikonli-font-icon.rst-icon, .rst-pagination .previous-page-button:disabled .ikonli-font-icon.rst-icon, .rst-pagination .next-page-button:disabled .ikonli-font-icon.rst-icon, .rst-pagination .last-page-button:disabled .ikonli-font-icon.rst-icon, .rst-text-icon-button:selected:disabled .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgba(26, 27, 32, 0.38);
+}
+.rst-text-icon-button:selected .rst-icon, .rst-pagination > .first-page-button:selected .rst-icon, .rst-pagination .previous-page-button:selected .rst-icon, .rst-pagination .next-page-button:selected .rst-icon, .rst-pagination .last-page-button:selected .rst-icon {
+  -fx-background-color: rgb(48, 70, 138);
+}
+.rst-text-icon-button:selected .ikonli-font-icon.rst-icon, .rst-pagination > .first-page-button:selected .ikonli-font-icon.rst-icon, .rst-pagination .previous-page-button:selected .ikonli-font-icon.rst-icon, .rst-pagination .next-page-button:selected .ikonli-font-icon.rst-icon, .rst-pagination .last-page-button:selected .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgb(48, 70, 138);
+}
+.rst-text-icon-button:hover, .rst-pagination > .first-page-button:hover, .rst-pagination .previous-page-button:hover, .rst-pagination .next-page-button:hover, .rst-pagination .last-page-button:hover {
+  -fx-background-color: rgba(68, 70, 80, 0.08);
+}
+.rst-text-icon-button:armed, .rst-pagination > .first-page-button:armed, .rst-pagination .previous-page-button:armed, .rst-pagination .next-page-button:armed, .rst-pagination .last-page-button:armed {
+  -fx-background-color: rgba(68, 70, 80, 0.12);
+}
+.rst-text-icon-button:selected:hover, .rst-pagination > .first-page-button:selected:hover, .rst-pagination .previous-page-button:selected:hover, .rst-pagination .next-page-button:selected:hover, .rst-pagination .last-page-button:selected:hover {
+  -fx-background-color: rgba(48, 70, 138, 0.08);
+}
+
+/********************************
+*         CheckBox        *
+*******************************/
+.rst-check-box, .rst-table-view .rst-row-selection-column .check-box, .rst-table-view .check-box-table-cell .check-box {
+  -fx-background-color: transparent;
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.1pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-check-box .box, .rst-table-view .rst-row-selection-column .check-box .box, .rst-table-view .check-box-table-cell .check-box .box {
+  -fx-min-height: 18px;
+  -fx-max-height: 18px;
+  -fx-pref-height: 18px;
+  -fx-min-width: 18px;
+  -fx-max-width: 18px;
+  -fx-pref-width: 18px;
+  -fx-background-color: transparent;
+  -fx-border-color: rgb(68, 70, 80);
+  -fx-border-width: 2px;
+  -fx-background-radius: 2px;
+  -fx-border-radius: 2px;
+}
+.rst-check-box:disabled, .rst-table-view .rst-row-selection-column .check-box:disabled, .rst-table-view .check-box-table-cell .check-box:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-check-box:disabled .box, .rst-table-view .rst-row-selection-column .check-box:disabled .box, .rst-table-view .check-box-table-cell .check-box:disabled .box {
+  -fx-border-color: rgba(26, 27, 32, 0.38);
+}
+.rst-check-box:selected .box, .rst-table-view .rst-row-selection-column .check-box:selected .box, .rst-table-view .check-box-table-cell .check-box:selected .box, .rst-check-box:indeterminate .box, .rst-table-view .rst-row-selection-column .check-box:indeterminate .box, .rst-table-view .check-box-table-cell .check-box:indeterminate .box {
+  -fx-background-color: rgb(48, 70, 138);
+  -fx-border-color: transparent;
+  -fx-border-width: 0;
+}
+.rst-check-box:selected .box .mark, .rst-table-view .rst-row-selection-column .check-box:selected .box .mark, .rst-table-view .check-box-table-cell .check-box:selected .box .mark, .rst-check-box:indeterminate .box .mark, .rst-table-view .rst-row-selection-column .check-box:indeterminate .box .mark, .rst-table-view .check-box-table-cell .check-box:indeterminate .box .mark {
+  -fx-background-color: rgb(255, 255, 255);
+}
+.rst-check-box:selected:disabled .box, .rst-table-view .rst-row-selection-column .check-box:selected:disabled .box, .rst-table-view .check-box-table-cell .check-box:selected:disabled .box, .rst-check-box:indeterminate:disabled .box, .rst-table-view .rst-row-selection-column .check-box:indeterminate:disabled .box, .rst-table-view .check-box-table-cell .check-box:indeterminate:disabled .box {
+  -fx-background-color: rgba(48, 70, 138, 0.38);
+}
+.rst-check-box:error, .rst-table-view .rst-row-selection-column .check-box:error, .rst-table-view .check-box-table-cell .check-box:error {
+  -fx-text-fill: rgb(186, 26, 26);
+}
+.rst-check-box:error .box, .rst-table-view .rst-row-selection-column .check-box:error .box, .rst-table-view .check-box-table-cell .check-box:error .box {
+  -fx-border-color: rgb(186, 26, 26);
+}
+.rst-check-box:error:disabled, .rst-table-view .rst-row-selection-column .check-box:error:disabled, .rst-table-view .check-box-table-cell .check-box:error:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-check-box:error:disabled .box, .rst-table-view .rst-row-selection-column .check-box:error:disabled .box, .rst-table-view .check-box-table-cell .check-box:error:disabled .box {
+  -fx-border-color: rgba(26, 27, 32, 0.38);
+}
+.rst-check-box:error:indeterminate .box, .rst-table-view .rst-row-selection-column .check-box:error:indeterminate .box, .rst-table-view .check-box-table-cell .check-box:error:indeterminate .box, .rst-check-box:error:selected .box, .rst-table-view .rst-row-selection-column .check-box:error:selected .box, .rst-table-view .check-box-table-cell .check-box:error:selected .box {
+  -fx-background-color: rgb(186, 26, 26);
+}
+.rst-check-box:error:indeterminate .box .mark, .rst-table-view .rst-row-selection-column .check-box:error:indeterminate .box .mark, .rst-table-view .check-box-table-cell .check-box:error:indeterminate .box .mark, .rst-check-box:error:selected .box .mark, .rst-table-view .rst-row-selection-column .check-box:error:selected .box .mark, .rst-table-view .check-box-table-cell .check-box:error:selected .box .mark {
+  -fx-background-color: rgb(255, 255, 255);
+}
+.rst-check-box:error:indeterminate:disabled .box, .rst-table-view .rst-row-selection-column .check-box:error:indeterminate:disabled .box, .rst-table-view .check-box-table-cell .check-box:error:indeterminate:disabled .box, .rst-check-box:error:selected:disabled .box, .rst-table-view .rst-row-selection-column .check-box:error:selected:disabled .box, .rst-table-view .check-box-table-cell .check-box:error:selected:disabled .box {
+  -fx-background-color: rgba(48, 70, 138, 0.38);
+}
+
+/********************************
+*         RadioButton          *
+*******************************/
+.rst-radio-button {
+  -fx-background-color: transparent;
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.1pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-radio-button .radio {
+  -fx-min-height: 18px;
+  -fx-max-height: 18px;
+  -fx-pref-height: 18px;
+  -fx-min-width: 18px;
+  -fx-max-width: 18px;
+  -fx-pref-width: 18px;
+  -fx-background-color: transparent;
+  -fx-border-color: rgb(68, 70, 80);
+  -fx-border-width: 2px;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+}
+.rst-radio-button:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-radio-button:disabled .radio {
+  -fx-border-color: rgba(26, 27, 32, 0.38);
+}
+.rst-radio-button:selected .radio {
+  -fx-border-color: rgb(48, 70, 138);
+  -fx-padding: 0 0 2px 0;
+}
+.rst-radio-button:selected .radio .dot {
+  -fx-background-color: rgb(48, 70, 138);
+  -fx-max-width: 8px;
+  -fx-max-height: 8px;
+}
+.rst-radio-button:selected:disabled .radio {
+  -fx-border-color: rgba(48, 70, 138, 0.38);
+}
+.rst-radio-button:selected:disabled .radio .dot {
+  -fx-background-color: rgba(48, 70, 138, 0.38);
+}
+.rst-radio-button:error {
+  -fx-text-fill: rgb(186, 26, 26);
+}
+.rst-radio-button:error .radio {
+  -fx-border-color: rgb(186, 26, 26);
+}
+.rst-radio-button:error:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-radio-button:error:disabled .radio {
+  -fx-border-color: rgba(26, 27, 32, 0.38);
+}
+.rst-radio-button:error:selected .radio {
+  -fx-border-color: rgb(186, 26, 26);
+  -fx-padding: 0 0 2px 0;
+}
+.rst-radio-button:error:selected .radio .dot {
+  -fx-background-color: rgb(186, 26, 26);
+  -fx-max-width: 8px;
+  -fx-max-height: 8px;
+}
+.rst-radio-button:error:selected:disabled .radio {
+  -fx-border-color: rgba(48, 70, 138, 0.38);
+}
+.rst-radio-button:error:selected:disabled .radio .dot {
+  -fx-background-color: rgba(48, 70, 138, 0.38);
+}
+
+/********************************
+*         Choice Button        *
+*******************************/
+.rst-choice-button {
+  -fx-background-radius: 6px;
+  -fx-border-radius: 6px;
+  -fx-text-fill: rgb(63, 70, 98);
+}
+.rst-choice-button:disabled {
+  -fx-background-color: rgba(26, 27, 32, 0.04);
+}
+.rst-choice-button:selected {
+  -fx-background-color: rgb(63, 70, 98), rgb(219, 224, 255);
+  -fx-background-insets: 0, 2;
+}
+.rst-choice-button:selected:disabled {
+  -fx-background-color: rgba(26, 27, 32, 0.04);
+  -fx-border-color: rgba(26, 27, 32, 0.38);
+  -fx-border-width: 2px;
+}
+.rst-choice-button:hover {
+  -fx-effect: none;
+}
+
+/********************************
+*              Chip            *
+*******************************/
+.rst-chip {
+  -fx-min-height: 32px;
+  -fx-padding: 0 16px;
+  -fx-background-color: rgb(197, 197, 210), rgb(244, 243, 249);
+  -fx-background-insets: 0, 1px;
+  -fx-background-radius: 6px;
+  -fx-border-radius: 6px;
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.1pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-alignment: CENTER;
+}
+.rst-chip .rst-leading-icon, .rst-chip .rst-trailing-icon {
+  -fx-max-height: 18px;
+  -fx-max-width: 18px;
+  -fx-pref-height: 18px;
+  -fx-pref-width: 18px;
+  -fx-font-size: 18px;
+  -fx-background-color: rgb(48, 70, 138);
+  -fx-fill: rgb(48, 70, 138);
+  -fx-text-fill: rgb(48, 70, 138);
+}
+.rst-chip:disabled {
+  -fx-background-color: rgba(26, 27, 32, 0.12);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-chip:disabled .rst-leading-icon, .rst-chip:disabled .rst-trailing-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-chip:hover {
+  -fx-background-color: rgb(197, 197, 210), rgb(244, 243, 249), rgba(68, 70, 80, 0.08);
+  -fx-background-insets: 0, 1px, 1px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.5, 0, 1);
+}
+.rst-chip:pressed {
+  -fx-background-color: rgb(197, 197, 210), rgb(244, 243, 249), rgba(68, 70, 80, 0.12);
+  -fx-background-insets: 0, 1px, 1px;
+  -fx-effect: none;
+}
+.rst-chip:input .rst-leading-icon, .rst-chip:input .rst-trailing-icon {
+  -fx-background-color: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-text-fill: rgb(68, 70, 80);
+}
+.rst-chip:input:selected .rst-leading-icon {
+  -fx-background-color: rgb(48, 70, 138);
+  -fx-fill: rgb(48, 70, 138);
+  -fx-text-fill: rgb(48, 70, 138);
+}
+.rst-chip:input:selected .rst-trailing-icon {
+  -fx-background-color: rgb(63, 70, 98);
+  -fx-fill: rgb(63, 70, 98);
+  -fx-text-fill: rgb(63, 70, 98);
+}
+.rst-chip:filter .rst-leading-icon, .rst-chip:filter .rst-trailing-icon {
+  -fx-background-color: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-text-fill: rgb(68, 70, 80);
+}
+.rst-chip:filter:selected .rst-leading-icon, .rst-chip:filter:selected .rst-trailing-icon {
+  -fx-background-color: rgb(63, 70, 98);
+  -fx-fill: rgb(63, 70, 98);
+  -fx-text-fill: rgb(63, 70, 98);
+}
+.rst-chip:alert:selected, .rst-chip:filter:selected, .rst-chip:input:selected {
+  -fx-background-color: rgb(219, 224, 255);
+  -fx-text-fill: rgb(63, 70, 98);
+}
+.rst-chip:alert:selected:hover, .rst-chip:filter:selected:hover, .rst-chip:input:selected:hover {
+  -fx-background-color: rgb(219, 224, 255), rgba(63, 70, 98, 0.08);
+  -fx-background-insets: 0, 0;
+  -rst-icon-size: 18px;
+}
+.rst-chip:alert:selected:pressed, .rst-chip:filter:selected:pressed, .rst-chip:input:selected:pressed {
+  -fx-background-color: rgb(219, 224, 255), rgba(63, 70, 98, 0.12);
+  -fx-background-insets: 0, 0;
+}
+.rst-chip:alert:disabled, .rst-chip:filter:disabled, .rst-chip:input:disabled {
+  -fx-background-color: rgba(26, 27, 32, 0.12);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-chip:alert:disabled .rst-leading-icon, .rst-chip:alert:disabled .rst-trailing-icon, .rst-chip:filter:disabled .rst-leading-icon, .rst-chip:filter:disabled .rst-trailing-icon, .rst-chip:input:disabled .rst-leading-icon, .rst-chip:input:disabled .rst-trailing-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+
+/*********************************
+*           Scroll Bar           *
+*********************************/
+.rst-scroll-bar, .rst-table-view .virtual-flow .scroll-bar {
+  -fx-background-color: rgb(219, 224, 255);
+}
+.rst-scroll-bar .thumb, .rst-table-view .virtual-flow .scroll-bar .thumb {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-scroll-bar .increment-button, .rst-table-view .virtual-flow .scroll-bar .increment-button {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 2px;
+}
+.rst-scroll-bar .increment-button .increment-arrow, .rst-table-view .virtual-flow .scroll-bar .increment-button .increment-arrow {
+  -fx-pref-width: 7px;
+  -fx-pref-height: 7px;
+  -fx-background-color: rgba(63, 70, 98, 0.38);
+}
+.rst-scroll-bar .increment-button .increment-arrow:hover, .rst-table-view .virtual-flow .scroll-bar .increment-button .increment-arrow:hover {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-scroll-bar .decrement-button, .rst-table-view .virtual-flow .scroll-bar .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 2px;
+}
+.rst-scroll-bar .decrement-button .decrement-arrow, .rst-table-view .virtual-flow .scroll-bar .decrement-button .decrement-arrow {
+  -fx-pref-width: 7px;
+  -fx-pref-height: 7px;
+  -fx-background-color: rgba(63, 70, 98, 0.38);
+}
+.rst-scroll-bar .decrement-button .decrement-arrow:hover, .rst-table-view .virtual-flow .scroll-bar .decrement-button .decrement-arrow:hover {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-scroll-bar:horizontal, .rst-table-view .virtual-flow .scroll-bar:horizontal {
+  -fx-max-height: 10px;
+  -fx-pref-height: 10px;
+}
+.rst-scroll-bar:horizontal .thumb, .rst-table-view .virtual-flow .scroll-bar:horizontal .thumb {
+  -fx-max-height: 10px;
+  -fx-pref-height: 10px;
+}
+.rst-scroll-bar:horizontal .increment-arrow, .rst-table-view .virtual-flow .scroll-bar:horizontal .increment-arrow {
+  -fx-shape: "M400-280v-400l200 200-200 200Z";
+}
+.rst-scroll-bar:horizontal .decrement-arrow, .rst-table-view .virtual-flow .scroll-bar:horizontal .decrement-arrow {
+  -fx-shape: "M560-280 360-480l200-200v400Z";
+}
+.rst-scroll-bar:vertical, .rst-table-view .virtual-flow .scroll-bar:vertical {
+  -fx-max-width: 10px;
+  -fx-pref-width: 10px;
+}
+.rst-scroll-bar:vertical .thumb, .rst-table-view .virtual-flow .scroll-bar:vertical .thumb {
+  -fx-max-width: 10px;
+  -fx-pref-width: 10px;
+}
+.rst-scroll-bar:vertical .increment-arrow, .rst-table-view .virtual-flow .scroll-bar:vertical .increment-arrow {
+  -fx-shape: "M480-360 280-560h400L480-360Z";
+}
+.rst-scroll-bar:vertical .decrement-arrow, .rst-table-view .virtual-flow .scroll-bar:vertical .decrement-arrow {
+  -fx-shape: "m280-400 200-200 200 200H280Z";
+}
+
+/*********************************
+*           Scroll Pane          *
+*********************************/
+.rst-scroll-pane, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane, .rst-titled-pane .scroll-pane, .rst-expandable-section .scroll-pane {
+  -fx-background-color: transparent;
+}
+.rst-scroll-pane .viewport, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .viewport, .rst-titled-pane .scroll-pane .viewport, .rst-expandable-section .scroll-pane .viewport {
+  -fx-background-color: transparent;
+}
+.rst-scroll-pane .scroll-bar, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar, .rst-titled-pane .scroll-pane .scroll-bar, .rst-expandable-section .scroll-pane .scroll-bar {
+  -fx-background-color: rgb(219, 224, 255);
+}
+.rst-scroll-pane .scroll-bar .thumb, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar .thumb, .rst-titled-pane .scroll-pane .scroll-bar .thumb, .rst-expandable-section .scroll-pane .scroll-bar .thumb {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-scroll-pane .scroll-bar .increment-button, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar .increment-button, .rst-titled-pane .scroll-pane .scroll-bar .increment-button, .rst-expandable-section .scroll-pane .scroll-bar .increment-button {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 2px;
+}
+.rst-scroll-pane .scroll-bar .increment-button .increment-arrow, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar .increment-button .increment-arrow, .rst-titled-pane .scroll-pane .scroll-bar .increment-button .increment-arrow, .rst-expandable-section .scroll-pane .scroll-bar .increment-button .increment-arrow {
+  -fx-pref-width: 7px;
+  -fx-pref-height: 7px;
+  -fx-background-color: rgba(63, 70, 98, 0.38);
+}
+.rst-scroll-pane .scroll-bar .increment-button .increment-arrow:hover, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar .increment-button .increment-arrow:hover, .rst-titled-pane .scroll-pane .scroll-bar .increment-button .increment-arrow:hover, .rst-expandable-section .scroll-pane .scroll-bar .increment-button .increment-arrow:hover {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-scroll-pane .scroll-bar .decrement-button, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar .decrement-button, .rst-titled-pane .scroll-pane .scroll-bar .decrement-button, .rst-expandable-section .scroll-pane .scroll-bar .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 2px;
+}
+.rst-scroll-pane .scroll-bar .decrement-button .decrement-arrow, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar .decrement-button .decrement-arrow, .rst-titled-pane .scroll-pane .scroll-bar .decrement-button .decrement-arrow, .rst-expandable-section .scroll-pane .scroll-bar .decrement-button .decrement-arrow {
+  -fx-pref-width: 7px;
+  -fx-pref-height: 7px;
+  -fx-background-color: rgba(63, 70, 98, 0.38);
+}
+.rst-scroll-pane .scroll-bar .decrement-button .decrement-arrow:hover, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar .decrement-button .decrement-arrow:hover, .rst-titled-pane .scroll-pane .scroll-bar .decrement-button .decrement-arrow:hover, .rst-expandable-section .scroll-pane .scroll-bar .decrement-button .decrement-arrow:hover {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-scroll-pane .scroll-bar:horizontal, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar:horizontal, .rst-titled-pane .scroll-pane .scroll-bar:horizontal, .rst-expandable-section .scroll-pane .scroll-bar:horizontal {
+  -fx-max-height: 10px;
+  -fx-pref-height: 10px;
+}
+.rst-scroll-pane .scroll-bar:horizontal .thumb, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar:horizontal .thumb, .rst-titled-pane .scroll-pane .scroll-bar:horizontal .thumb, .rst-expandable-section .scroll-pane .scroll-bar:horizontal .thumb {
+  -fx-max-height: 10px;
+  -fx-pref-height: 10px;
+}
+.rst-scroll-pane .scroll-bar:horizontal .increment-arrow, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar:horizontal .increment-arrow, .rst-titled-pane .scroll-pane .scroll-bar:horizontal .increment-arrow, .rst-expandable-section .scroll-pane .scroll-bar:horizontal .increment-arrow {
+  -fx-shape: "M400-280v-400l200 200-200 200Z";
+}
+.rst-scroll-pane .scroll-bar:horizontal .decrement-arrow, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar:horizontal .decrement-arrow, .rst-titled-pane .scroll-pane .scroll-bar:horizontal .decrement-arrow, .rst-expandable-section .scroll-pane .scroll-bar:horizontal .decrement-arrow {
+  -fx-shape: "M560-280 360-480l200-200v400Z";
+}
+.rst-scroll-pane .scroll-bar:vertical, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar:vertical, .rst-titled-pane .scroll-pane .scroll-bar:vertical, .rst-expandable-section .scroll-pane .scroll-bar:vertical {
+  -fx-max-width: 10px;
+  -fx-pref-width: 10px;
+}
+.rst-scroll-pane .scroll-bar:vertical .thumb, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar:vertical .thumb, .rst-titled-pane .scroll-pane .scroll-bar:vertical .thumb, .rst-expandable-section .scroll-pane .scroll-bar:vertical .thumb {
+  -fx-max-width: 10px;
+  -fx-pref-width: 10px;
+}
+.rst-scroll-pane .scroll-bar:vertical .increment-arrow, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar:vertical .increment-arrow, .rst-titled-pane .scroll-pane .scroll-bar:vertical .increment-arrow, .rst-expandable-section .scroll-pane .scroll-bar:vertical .increment-arrow {
+  -fx-shape: "M480-360 280-560h400L480-360Z";
+}
+.rst-scroll-pane .scroll-bar:vertical .decrement-arrow, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .scroll-bar:vertical .decrement-arrow, .rst-titled-pane .scroll-pane .scroll-bar:vertical .decrement-arrow, .rst-expandable-section .scroll-pane .scroll-bar:vertical .decrement-arrow {
+  -fx-shape: "m280-400 200-200 200 200H280Z";
+}
+.rst-scroll-pane .corner, .rst-dialog .rst-dialog-main .rst-dialog-body > .scroll-pane .corner, .rst-titled-pane .scroll-pane .corner, .rst-expandable-section .scroll-pane .corner {
+  -fx-background-color: #c2caff;
+}
+
+/*********************************
+*           Titled Pane          *
+*********************************/
+.rst-titled-pane .content, .rst-expandable-section .content {
+  -fx-padding: 0;
+  -fx-background-color: rgb(233, 231, 238);
+  -fx-background-insets: 0;
+  -fx-border-color: transparent;
+  -fx-border-width: 0;
+}
+.rst-titled-pane .scroll-pane .view-port, .rst-expandable-section .scroll-pane .view-port {
+  -fx-padding: 0;
+}
+.rst-titled-pane .title, .rst-expandable-section .title {
+  -fx-min-height: 32px;
+  -fx-max-height: 32px;
+  -fx-pref-height: 32px;
+  -fx-padding: 16px;
+  -fx-background-color: rgb(233, 231, 238);
+}
+.rst-titled-pane .title .arrow-button .arrow, .rst-expandable-section .title .arrow-button .arrow {
+  -fx-shape: "M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z";
+  -fx-background-color: rgb(26, 27, 32);
+  -fx-background-insets: 0;
+}
+.rst-titled-pane:focused .arrow, .rst-expandable-section:focused .arrow {
+  -fx-background-color: rgb(26, 27, 32);
+  -fx-background-insets: 0;
+  -fx-effect: none;
+}
+
+.rst-expandable-section .title {
+  -fx-max-height: 0px;
+  -fx-padding: 0px;
+  -fx-opacity: 0;
+  -fx-cursor: NONE;
+}
+
+/*********************************
+*        Description Pane        *
+*********************************/
+.rst-description-pane .rst-label-text {
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.25pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-description-pane .rst-supporting-text {
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.4pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-description-pane:disabled .rst-label-text, .rst-description-pane:disabled .rst-supporting-text {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-description-pane .rst-label-text:error, .rst-description-pane .rst-supporting-text:error {
+  -fx-text-fill: rgb(186, 26, 26);
+  -fx-fill: rgb(186, 26, 26);
+}
+
+/******************************************
+*            Filled TextField             *
+*******************************************/
+.rst-filled-text-field, .rst-search-field {
+  -fx-min-height: 48px;
+  -fx-background-radius: 0;
+  -fx-border-radius: 0;
+  -fx-background-insets: 0;
+  -fx-border-insets: 0;
+  -fx-prompt-text-fill: rgb(117, 118, 130);
+  -fx-text-fill: rgb(117, 118, 130);
+  -fx-fill: rgb(117, 118, 130);
+  -fx-font-size: 16pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 24pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-background-color: rgb(233, 231, 238);
+  -fx-padding: 8px 16px;
+}
+.rst-filled-text-field .rst-leading-icon, .rst-search-field .rst-leading-icon, .rst-filled-text-field .rst-trailing-icon, .rst-search-field .rst-trailing-icon {
+  -fx-min-height: 20px;
+  -fx-min-width: 20px;
+  -fx-max-height: 20px;
+  -fx-max-width: 20px;
+  -fx-pref-height: 20px;
+  -fx-pref-width: 20px;
+  -fx-text-size: 20px;
+  -fx-background-color: rgb(117, 118, 130);
+  -fx-text-fill: rgb(117, 118, 130);
+  -fx-fill: rgb(117, 118, 130);
+}
+.rst-filled-text-field:error:focused .rst-trailing-icon, .rst-search-field:error:focused .rst-trailing-icon {
+  -fx-background-color: rgb(186, 26, 26);
+  -fx-text-fill: rgb(186, 26, 26);
+  -fx-fill: rgb(186, 26, 26);
+}
+.rst-filled-text-field:focused .rst-leading-icon, .rst-search-field:focused .rst-leading-icon, .rst-filled-text-field:focused .rst-trailing-icon, .rst-search-field:focused .rst-trailing-icon {
+  -fx-background-color: rgb(68, 70, 80);
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+}
+.rst-filled-text-field:disabled .rst-leading-icon, .rst-search-field:disabled .rst-leading-icon, .rst-filled-text-field:disabled .rst-trailing-icon, .rst-search-field:disabled .rst-trailing-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-filled-text-field:disabled, .rst-search-field:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-background-color: rgba(26, 27, 32, 0.04);
+}
+.rst-filled-text-field .rst-text-field-label, .rst-search-field .rst-text-field-label {
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-filled-text-field .rst-text-field-supporting-text, .rst-search-field .rst-text-field-supporting-text {
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.4pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-filled-text-field:disabled .rst-text-field-label, .rst-search-field:disabled .rst-text-field-label, .rst-filled-text-field:disabled .rst-text-field-supporting-text, .rst-search-field:disabled .rst-text-field-supporting-text {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-filled-text-field:error .rst-text-field-label, .rst-search-field:error .rst-text-field-label, .rst-filled-text-field:error .rst-text-field-supporting-text, .rst-search-field:error .rst-text-field-supporting-text {
+  -fx-text-fill: rgb(186, 26, 26);
+  -fx-fill: rgb(186, 26, 26);
+}
+.rst-filled-text-field:focused, .rst-search-field:focused {
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+}
+.rst-filled-text-field:disabled, .rst-search-field:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-background-color: rgba(26, 27, 32, 0.04);
+}
+
+/******************************************
+*            Outlined TextField           *
+*******************************************/
+.rst-outlined-text-field {
+  -fx-min-height: 48px;
+  -fx-background-radius: 0;
+  -fx-border-radius: 0;
+  -fx-background-insets: 0;
+  -fx-border-insets: 0;
+  -fx-prompt-text-fill: rgb(117, 118, 130);
+  -fx-text-fill: rgb(117, 118, 130);
+  -fx-fill: rgb(117, 118, 130);
+  -fx-font-size: 16pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 24pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-background-color: transparent;
+  -fx-border-color: rgb(117, 118, 130);
+  -fx-border-width: 1px;
+  -fx-padding: 8px 16px;
+}
+.rst-outlined-text-field .rst-leading-icon, .rst-outlined-text-field .rst-trailing-icon {
+  -fx-min-height: 20px;
+  -fx-min-width: 20px;
+  -fx-max-height: 20px;
+  -fx-max-width: 20px;
+  -fx-pref-height: 20px;
+  -fx-pref-width: 20px;
+  -fx-text-size: 20px;
+  -fx-background-color: rgb(117, 118, 130);
+  -fx-text-fill: rgb(117, 118, 130);
+  -fx-fill: rgb(117, 118, 130);
+}
+.rst-outlined-text-field:error:focused .rst-trailing-icon {
+  -fx-background-color: rgb(186, 26, 26);
+  -fx-text-fill: rgb(186, 26, 26);
+  -fx-fill: rgb(186, 26, 26);
+}
+.rst-outlined-text-field:focused .rst-leading-icon, .rst-outlined-text-field:focused .rst-trailing-icon {
+  -fx-background-color: rgb(68, 70, 80);
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+}
+.rst-outlined-text-field:disabled .rst-leading-icon, .rst-outlined-text-field:disabled .rst-trailing-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-outlined-text-field:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-background-color: rgba(26, 27, 32, 0.04);
+}
+.rst-outlined-text-field .rst-text-field-label {
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-outlined-text-field .rst-text-field-supporting-text {
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.4pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-outlined-text-field:disabled .rst-text-field-label, .rst-outlined-text-field:disabled .rst-text-field-supporting-text {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-outlined-text-field:error .rst-text-field-label, .rst-outlined-text-field:error .rst-text-field-supporting-text {
+  -fx-text-fill: rgb(186, 26, 26);
+  -fx-fill: rgb(186, 26, 26);
+}
+.rst-outlined-text-field:focused {
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+}
+.rst-outlined-text-field:focused {
+  -fx-border-color: rgb(48, 70, 138);
+  -fx-border-width: 2px;
+}
+.rst-outlined-text-field:error {
+  -fx-border-color: rgb(186, 26, 26);
+}
+.rst-outlined-text-field:disabled {
+  -fx-background-color: transparent;
+  -fx-border-color: rgba(26, 27, 32, 0.12);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-prompt-text-fill: rgba(26, 27, 32, 0.38);
+}
+
+/******************************************
+*            Outlined TextArea            *
+*******************************************/
+.rst-outlined-text-area {
+  -fx-min-height: 48px;
+  -fx-background-radius: 0;
+  -fx-border-radius: 0;
+  -fx-background-insets: 0;
+  -fx-border-insets: 0;
+  -fx-prompt-text-fill: rgb(117, 118, 130);
+  -fx-text-fill: rgb(117, 118, 130);
+  -fx-fill: rgb(117, 118, 130);
+  -fx-font-size: 16pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 24pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-background-color: transparent;
+  -fx-border-color: rgb(117, 118, 130);
+  -fx-border-width: 1px;
+  -fx-padding: 0 0;
+}
+.rst-outlined-text-area .rst-leading-icon, .rst-outlined-text-area .rst-trailing-icon {
+  -fx-min-height: 20px;
+  -fx-min-width: 20px;
+  -fx-max-height: 20px;
+  -fx-max-width: 20px;
+  -fx-pref-height: 20px;
+  -fx-pref-width: 20px;
+  -fx-text-size: 20px;
+  -fx-background-color: rgb(117, 118, 130);
+  -fx-text-fill: rgb(117, 118, 130);
+  -fx-fill: rgb(117, 118, 130);
+}
+.rst-outlined-text-area:error:focused .rst-trailing-icon {
+  -fx-background-color: rgb(186, 26, 26);
+  -fx-text-fill: rgb(186, 26, 26);
+  -fx-fill: rgb(186, 26, 26);
+}
+.rst-outlined-text-area:focused .rst-leading-icon, .rst-outlined-text-area:focused .rst-trailing-icon {
+  -fx-background-color: rgb(68, 70, 80);
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+}
+.rst-outlined-text-area:disabled .rst-leading-icon, .rst-outlined-text-area:disabled .rst-trailing-icon {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-outlined-text-area:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-background-color: rgba(26, 27, 32, 0.04);
+}
+.rst-outlined-text-area .rst-text-field-label {
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-outlined-text-area .rst-text-field-supporting-text {
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.4pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-outlined-text-area:disabled .rst-text-field-label, .rst-outlined-text-area:disabled .rst-text-field-supporting-text {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-outlined-text-area:error .rst-text-field-label, .rst-outlined-text-area:error .rst-text-field-supporting-text {
+  -fx-text-fill: rgb(186, 26, 26);
+  -fx-fill: rgb(186, 26, 26);
+}
+.rst-outlined-text-area:focused {
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+}
+.rst-outlined-text-area:focused {
+  -fx-border-color: rgb(48, 70, 138);
+  -fx-border-width: 2px;
+}
+.rst-outlined-text-area:error {
+  -fx-border-color: rgb(186, 26, 26);
+}
+.rst-outlined-text-area:disabled {
+  -fx-background-color: transparent;
+  -fx-border-color: rgba(26, 27, 32, 0.12);
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+  -fx-prompt-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-outlined-text-area .content, .rst-outlined-text-area:focused .content {
+  -fx-background-color: transparent;
+  -fx-padding: 8px 16px;
+}
+.rst-outlined-text-area .scroll-bar {
+  -fx-background-color: rgb(219, 224, 255);
+}
+.rst-outlined-text-area .scroll-bar .thumb {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-outlined-text-area .scroll-bar .increment-button {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 2px;
+}
+.rst-outlined-text-area .scroll-bar .increment-button .increment-arrow {
+  -fx-pref-width: 7px;
+  -fx-pref-height: 7px;
+  -fx-background-color: rgba(63, 70, 98, 0.38);
+}
+.rst-outlined-text-area .scroll-bar .increment-button .increment-arrow:hover {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-outlined-text-area .scroll-bar .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 2px;
+}
+.rst-outlined-text-area .scroll-bar .decrement-button .decrement-arrow {
+  -fx-pref-width: 7px;
+  -fx-pref-height: 7px;
+  -fx-background-color: rgba(63, 70, 98, 0.38);
+}
+.rst-outlined-text-area .scroll-bar .decrement-button .decrement-arrow:hover {
+  -fx-background-color: rgb(63, 70, 98);
+}
+.rst-outlined-text-area .scroll-bar:horizontal {
+  -fx-max-height: 10px;
+  -fx-pref-height: 10px;
+}
+.rst-outlined-text-area .scroll-bar:horizontal .thumb {
+  -fx-max-height: 10px;
+  -fx-pref-height: 10px;
+}
+.rst-outlined-text-area .scroll-bar:horizontal .increment-arrow {
+  -fx-shape: "M400-280v-400l200 200-200 200Z";
+}
+.rst-outlined-text-area .scroll-bar:horizontal .decrement-arrow {
+  -fx-shape: "M560-280 360-480l200-200v400Z";
+}
+.rst-outlined-text-area .scroll-bar:vertical {
+  -fx-max-width: 10px;
+  -fx-pref-width: 10px;
+}
+.rst-outlined-text-area .scroll-bar:vertical .thumb {
+  -fx-max-width: 10px;
+  -fx-pref-width: 10px;
+}
+.rst-outlined-text-area .scroll-bar:vertical .increment-arrow {
+  -fx-shape: "M480-360 280-560h400L480-360Z";
+}
+.rst-outlined-text-area .scroll-bar:vertical .decrement-arrow {
+  -fx-shape: "m280-400 200-200 200 200H280Z";
+}
+
+/******************************************
+*               SearchField               *
+*******************************************/
+.rst-search-field {
+  -fx-background-radius: 28px;
+  -fx-border-radius: 28px;
+}
+
+/******************************************
+*   TextField Label and Supporting Text   *
+*******************************************/
+.rst-text-field-label {
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-text-field-label:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-text-field-label:error {
+  -fx-text-fill: rgb(186, 26, 26);
+}
+
+.rst-text-field-supporting-text {
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.4pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-text-field-supporting-text:disabled {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-text-field-supporting-text:error {
+  -fx-text-fill: rgb(186, 26, 26);
+}
+
+/***************************
+*          Tooltip          *
+***************************/
+.rst-tooltip {
+  -fx-min-height: 24px;
+  -fx-background-color: rgb(47, 48, 53);
+  -fx-padding: 2px 8px;
+  -fx-background-radius: 4px;
+  -fx-border-radius: 4px;
+  -fx-text-fill: rgb(242, 240, 246);
+  -fx-fill: rgb(242, 240, 246);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.4pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-effect: none;
+}
+
+/***************************
+*          Dialog          *
+***************************/
+.rst-dialog {
+  -fx-min-width: 280px;
+  -fx-max-width: 560px;
+  -fx-max-height: 700px;
+  -fx-background-radius: 28px;
+  -fx-border-radius: 28px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 9, 0.5, 0, 3);
+}
+.rst-dialog .rst-dialog-main {
+  -fx-min-width: 280px;
+  -fx-max-width: 560px;
+  -fx-max-height: 700px;
+  -fx-padding: 24px;
+  -fx-background-radius: 28px;
+  -fx-border-radius: 28px;
+  -fx-background-color: rgb(233, 231, 238);
+}
+.rst-dialog .rst-dialog-main .rst-dialog-header .rst-close-button {
+  -fx-pref-height: 24px;
+  -fx-pref-width: 24px;
+  -fx-padding: 4px;
+  -fx-background-color: transparent;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+  -fx-content-display: GRAPHIC_ONLY;
+}
+.rst-dialog .rst-dialog-main .rst-dialog-header .rst-close-button .rst-close-icon {
+  -fx-max-height: 12px;
+  -fx-max-width: 12px;
+  -fx-shape: "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z";
+  -fx-background-color: rgb(197, 197, 210);
+}
+.rst-dialog .rst-dialog-main .rst-dialog-header .rst-close-button:hover {
+  -fx-background-color: rgb(186, 26, 26);
+}
+.rst-dialog .rst-dialog-main .rst-dialog-header .rst-close-button:hover .rst-close-icon {
+  -fx-background-color: rgb(255, 255, 255);
+}
+.rst-dialog .rst-dialog-main .rst-dialog-header .rst-close-button:armed {
+  -fx-background-color: rgb(186, 26, 26), rgba(255, 255, 255, 0.1);
+  -fx-background-insets: 0, 0;
+}
+.rst-dialog .rst-dialog-main .rst-dialog-header .rst-dialog-title {
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 24pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0;
+  -fx-line-height: 32pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-dialog .rst-dialog-main .rst-dialog-body {
+  -fx-min-width: 232px;
+  -fx-max-width: 512px;
+  -fx-max-height: 600px;
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.25pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-alignment: TOP_LEFT;
+  -fx-text-alignment: TOP_LEFT;
+  -fx-wrap-text: true;
+}
+.rst-dialog .rst-dialog-main .rst-dialog-button-bar {
+  -fx-pref-height: 52px;
+}
+.rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:hover {
+  -fx-effect: none;
+}
+.rst-dialog .rst-dialog-main .rst-dialog-button-bar .rst-dialog-button:default:hover {
+  -fx-effect: none;
+}
+
+/***************************
+*          Toast           *
+***************************/
+.rst-toast {
+  -fx-min-height: 36px;
+  -fx-max-height: 56px;
+  -fx-max-width: 320px;
+  -fx-background-radius: 4px;
+  -fx-border-radius: 4px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 9, 0.5, 0, 3);
+}
+.rst-toast .rst-toast-main {
+  -fx-min-height: 36px;
+  -fx-max-height: 56px;
+  -fx-max-width: 320px;
+  -fx-background-color: rgb(47, 48, 53);
+  -fx-padding: 12px;
+  -fx-spacing: 12px;
+  -fx-background-radius: 4px;
+  -fx-border-radius: 4px;
+  -fx-alignment: CENTER;
+}
+.rst-toast .rst-toast-main .rst-toast-content {
+  -fx-text-fill: rgb(181, 196, 255);
+  -fx-fill: rgb(181, 196, 255);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-text-alignment: LEFT;
+  -fx-wrap-text: true;
+}
+.rst-toast .rst-toast-main .rst-close-button {
+  -fx-min-height: 18px;
+  -fx-min-width: 18px;
+  -fx-padding: 4px;
+  -fx-background-color: transparent;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+  -fx-content-display: GRAPHIC_ONLY;
+}
+.rst-toast .rst-toast-main .rst-close-button .rst-close-icon {
+  -fx-pref-height: 12px;
+  -fx-pref-width: 12px;
+  -fx-background-color: rgb(242, 240, 246);
+}
+
+/*********************************
+*    Combo Box and Choice Box    *
+*********************************/
+.rst-drop-down, .rst-pagination .max-entries {
+  -fx-min-height: 48px;
+  -fx-pref-height: 48px;
+  -fx-padding: 6px 12px;
+  -fx-background-color: transparent;
+  -fx-border-color: rgb(117, 118, 130);
+  -fx-border-width: 1px;
+  -fx-background-radius: 6px;
+  -fx-border-radius: 6px;
+}
+.rst-drop-down > .list-cell, .rst-pagination .max-entries > .list-cell {
+  -fx-padding: 0;
+  -fx-text-fill: rgb(117, 118, 130);
+  -fx-fill: rgb(117, 118, 130);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.25pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-drop-down .arrow-button, .rst-pagination .max-entries .arrow-button {
+  -fx-min-height: 24px;
+  -fx-min-width: 24px;
+  -fx-pref-height: 24px;
+  -fx-pref-width: 24px;
+  -fx-padding: 6px 12px;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+  -fx-content-display: GRAPHIC_ONLY;
+}
+.rst-drop-down .arrow-button .arrow, .rst-pagination .max-entries .arrow-button .arrow {
+  -fx-background-color: rgb(117, 118, 130);
+}
+.rst-drop-down .list-view, .rst-pagination .max-entries .list-view {
+  -fx-background-color: transparent;
+  -fx-padding: 0;
+  -fx-background-insets: 0;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 7, 0.5, 0, 2);
+}
+.rst-drop-down .list-view .placeholder > .label, .rst-pagination .max-entries .list-view .placeholder > .label {
+  -fx-min-height: 48px;
+  -fx-padding: 6px 12px;
+  -fx-background: rgb(250, 248, 255);
+}
+.rst-drop-down .list-view .list-cell, .rst-pagination .max-entries .list-view .list-cell {
+  -fx-min-height: 48px;
+  -fx-padding: 6px 12px;
+  -fx-background: rgb(250, 248, 255);
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 16pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 24pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-drop-down .list-view .list-cell:filled:hover, .rst-pagination .max-entries .list-view .list-cell:filled:hover {
+  -fx-background-color: rgb(250, 248, 255), rgba(26, 27, 32, 0.08);
+  -fx-background-insets: 0, 0;
+}
+.rst-drop-down .list-view .list-cell:filled:focused, .rst-pagination .max-entries .list-view .list-cell:filled:focused {
+  -fx-background: rgb(250, 248, 255);
+  -fx-background-insets: 0;
+}
+.rst-drop-down .list-view .list-cell:filled:selected, .rst-pagination .max-entries .list-view .list-cell:filled:selected {
+  -fx-background-color: rgb(219, 224, 255);
+  -fx-text-fill: rgb(63, 70, 98);
+}
+.rst-drop-down .list-view .list-cell:filled:selected:hover, .rst-pagination .max-entries .list-view .list-cell:filled:selected:hover {
+  -fx-background-color: rgb(219, 224, 255), rgba(26, 27, 32, 0.08);
+  -fx-background-insets: 0, 0;
+}
+.rst-drop-down:disabled, .rst-pagination .max-entries:disabled {
+  -fx-border-color: rgba(26, 27, 32, 0.12);
+}
+.rst-drop-down:disabled > .list-cell, .rst-pagination .max-entries:disabled > .list-cell {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-drop-down:disabled .arrow-button:disabled .arrow, .rst-pagination .max-entries:disabled .arrow-button:disabled .arrow {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+}
+.rst-drop-down:focused, .rst-pagination .max-entries:focused {
+  -fx-border-color: rgb(48, 70, 138);
+  -fx-border-width: 2px;
+  -fx-text-fill: rgb(26, 27, 32);
+}
+.rst-drop-down:focused > .list-cell, .rst-pagination .max-entries:focused > .list-cell {
+  -fx-text-fill: rgb(26, 27, 32);
+}
+.rst-drop-down:focused .arrow-button > .arrow, .rst-pagination .max-entries:focused .arrow-button > .arrow {
+  -fx-background-color: rgb(48, 70, 138);
+}
+.rst-drop-down:focused:error .arrow-button > .arrow, .rst-pagination .max-entries:focused:error .arrow-button > .arrow {
+  -fx-background-color: rgb(186, 26, 26);
+}
+.rst-drop-down:hover .arrow-button, .rst-pagination .max-entries:hover .arrow-button {
+  -fx-background-color: rgba(26, 27, 32, 0.08);
+}
+.rst-drop-down:error, .rst-pagination .max-entries:error {
+  -fx-border-color: rgb(186, 26, 26);
+}
+
+/*********************************
+*         Date Picker            *
+*********************************/
+.rst-date-picker {
+  -fx-min-height: 48px;
+  -fx-padding: 6px 12px;
+  -fx-background-color: transparent;
+  -fx-border-color: rgb(117, 118, 130);
+  -fx-border-width: 1px;
+  -fx-background-radius: 6px;
+  -fx-border-radius: 6px;
+}
+.rst-date-picker .text-field {
+  -fx-pref-width: 180px;
+  -fx-background-color: transparent;
+  -fx-padding: 0;
+  -fx-text-fill: rgb(117, 118, 130);
+  -fx-fill: rgb(117, 118, 130);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.25pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-prompt-text-fill: rgb(117, 118, 130);
+}
+.rst-date-picker .arrow-button {
+  -fx-pref-height: 24px;
+  -fx-pref-width: 20px;
+  -fx-padding: 6px 10px 6px 8px;
+  -fx-background-color: transparent;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+  -fx-content-display: GRAPHIC_ONLY;
+}
+.rst-date-picker .arrow-button .arrow {
+  -fx-pref-height: 14px;
+  -fx-pref-width: 14px;
+  -fx-shape: "M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z";
+  -fx-background-color: rgb(117, 118, 130);
+}
+.rst-date-picker:disabled {
+  -fx-border-color: rgba(26, 27, 32, 0.12);
+}
+.rst-date-picker:disabled .text-field {
+  -fx-text-fill: rgba(26, 27, 32, 0.38);
+}
+.rst-date-picker:disabled .arrow-button:disabled .arrow {
+  -fx-background-color: rgba(26, 27, 32, 0.38);
+}
+.rst-date-picker:hover .arrow-button {
+  -fx-background-color: rgba(26, 27, 32, 0.08);
+}
+.rst-date-picker:focused {
+  -fx-border-color: rgb(48, 70, 138);
+  -fx-border-width: 2px;
+}
+.rst-date-picker:focused .text-field {
+  -fx-text-fill: rgb(26, 27, 32);
+}
+.rst-date-picker:focused .arrow-button > .arrow {
+  -fx-background-color: rgb(48, 70, 138);
+}
+.rst-date-picker:focused:error .arrow-button > .arrow {
+  -fx-background-color: rgb(186, 26, 26);
+}
+.rst-date-picker:error {
+  -fx-border-color: rgb(186, 26, 26);
+}
+.rst-date-picker .date-picker-popup {
+  -fx-background-color: rgb(233, 231, 238);
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 9, 0.5, 0, 3);
+  -fx-background-radius: 12px;
+  -fx-border-radius: 12px;
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.25pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-date-picker .date-picker-popup .month-year-pane, .rst-date-picker .date-picker-popup .calendar-grid {
+  -fx-background-color: rgb(233, 231, 238);
+}
+.rst-date-picker .date-picker-popup .spinner > .label {
+  -fx-text-fill: rgb(68, 70, 80);
+}
+.rst-date-picker .date-picker-popup .spinner > .button {
+  -fx-padding: 6px 12px;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+}
+.rst-date-picker .date-picker-popup .spinner > .button > .left-arrow, .rst-date-picker .date-picker-popup .spinner > .button > .right-arrow {
+  -fx-pref-height: 10px;
+  -fx-pref-width: 10px;
+  -fx-background-color: rgb(68, 70, 80);
+  -fx-shape: "M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z";
+}
+.rst-date-picker .date-picker-popup .spinner > .button > .right-arrow {
+  -fx-shape: "M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z";
+}
+.rst-date-picker .date-picker-popup .spinner > .button:hover {
+  -fx-background-color: rgba(26, 27, 32, 0.08);
+}
+.rst-date-picker .date-picker-popup .spinner > .button:focused {
+  -fx-background-color: rgba(26, 27, 32, 0.12);
+}
+.rst-date-picker .date-picker-popup .date-cell {
+  -fx-padding: 0;
+  -fx-text-fill: rgb(26, 27, 32);
+}
+.rst-date-picker .date-picker-popup .day-name-cell {
+  -fx-padding: 0 4px;
+}
+.rst-date-picker .date-picker-popup .day-cell {
+  -fx-pref-height: 50px;
+  -fx-pref-width: 48px;
+  -fx-padding: 0;
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-border-width: 0px;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+}
+.rst-date-picker .date-picker-popup .day-cell:hover {
+  -fx-background-color: rgb(48, 70, 138);
+  -fx-text-fill: rgb(255, 255, 255);
+}
+.rst-date-picker .date-picker-popup .selected {
+  -fx-background-color: rgb(48, 70, 138);
+  -fx-text-fill: rgb(255, 255, 255);
+}
+.rst-date-picker .date-picker-popup .today {
+  -fx-border-color: rgb(48, 70, 138);
+  -fx-border-width: 1px;
+  -fx-text-fill: rgb(48, 70, 138);
+}
+.rst-date-picker .date-picker-popup .today:hover, .rst-date-picker .date-picker-popup .today.selected, .rst-date-picker .date-picker-popup .today.selected:hover {
+  -fx-border-width: 0;
+  -fx-text-fill: rgb(255, 255, 255);
+}
+.rst-date-picker .date-picker-popup .previous-month, .rst-date-picker .date-picker-popup .next-month {
+  -fx-text-fill: rgb(197, 197, 210);
+}
+
+/*********************************
+*         Pagination             *
+*********************************/
+.rst-pagination {
+  -fx-padding: 8px 12px;
+  -fx-spacing: 12px;
+  -fx-alignment: CENTER_RIGHT;
+}
+.rst-pagination > .first-page-button, .rst-pagination .previous-page-button, .rst-pagination .next-page-button, .rst-pagination .last-page-button {
+  -fx-min-height: 36px;
+  -fx-min-width: 36px;
+  -fx-pref-height: 36px;
+  -fx-pref-width: 36px;
+  -fx-padding: 8px;
+}
+.rst-pagination > .first-page-button .rst-icon.arrow, .rst-pagination .previous-page-button .rst-icon.arrow, .rst-pagination .next-page-button .rst-icon.arrow, .rst-pagination .last-page-button .rst-icon.arrow {
+  -fx-min-height: 12px;
+  -fx-min-width: 12px;
+  -fx-pref-height: 12px;
+  -fx-pref-width: 12px;
+}
+.rst-pagination .first-page-button .arrow {
+  -fx-shape: "M240-240v-480h80v480h-80Zm440 0L440-480l240-240 56 56-184 184 184 184-56 56Z";
+}
+.rst-pagination .previous-page-button .arrow {
+  -fx-shape: "M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z";
+}
+.rst-pagination .next-page-button .arrow {
+  -fx-shape: "M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z";
+}
+.rst-pagination .last-page-button .arrow {
+  -fx-shape: "m280-240-56-56 184-184-184-184 56-56 240 240-240 240Zm360 0v-480h80v480h-80Z";
+}
+.rst-pagination .max-entries-label, .rst-pagination .progress-label {
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-pagination .max-entries {
+  -fx-min-height: 36px;
+  -fx-pref-height: 36px;
+}
+.rst-pagination .max-entries .arrow-button {
+  -fx-min-height: 18px;
+  -fx-min-width: 18px;
+  -fx-pref-height: 18px;
+  -fx-pref-width: 18px;
+  -fx-padding: 3px 6px;
+}
+
+/********************************
+*           Table View          *
+********************************/
+.rst-table-view {
+  -fx-background-color: rgb(197, 197, 210), rgb(250, 248, 255);
+  -fx-background-insets: 0, 1;
+  -fx-padding: 2;
+  -fx-background-radius: 4px;
+  -fx-border-radius: 4px;
+}
+.rst-table-view .table-cell {
+  -fx-min-height: 48px;
+  -fx-max-height: 48px;
+  -fx-pref-height: 48px;
+  -fx-border-color: rgb(197, 197, 210);
+  -fx-border-width: 0 1 0 0;
+  -fx-padding: 6px 16px;
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 400;
+  -fx-letter-spacing: 0.25pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+  -fx-alignment: CENTER_LEFT;
+}
+.rst-table-view .column-header-background {
+  -fx-background-color: rgb(250, 248, 255);
+}
+.rst-table-view .column-header-background .filler {
+  -fx-background-color: rgb(197, 197, 210), rgb(250, 248, 255);
+  -fx-background-insets: 0, 0 0 1 0;
+}
+.rst-table-view .column-header {
+  -fx-background-color: rgb(197, 197, 210), rgb(250, 248, 255);
+  -fx-background-insets: 0, 0 1 1 0;
+  -fx-min-height: 52px;
+  -fx-max-height: 52px;
+  -fx-pref-height: 52px;
+  -fx-padding: 0 16px;
+}
+.rst-table-view .column-header .label {
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.1pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-table-view .column-header .arrow {
+  -fx-pref-height: 1em;
+  -fx-pref-width: 1em;
+  -fx-shape: "M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z";
+  -fx-background-color: rgb(26, 27, 32);
+}
+.rst-table-view .column-drag-header {
+  -fx-background: rgb(219, 224, 255);
+  -fx-background-color: rgb(219, 224, 255);
+  -fx-text-fill: rgb(26, 27, 32);
+  -fx-fill: rgb(26, 27, 32);
+  -fx-font-size: 14pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.1pt;
+  -fx-line-height: 20pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-table-view .column-overlay {
+  -fx-background-color: rgb(219, 224, 255);
+}
+.rst-table-view .table-row-cell, .rst-table-view .table-row-cell:odd {
+  -fx-min-height: 48px;
+  -fx-max-height: 48px;
+  -fx-pref-height: 48px;
+  -fx-background-color: rgb(197, 197, 210), rgb(250, 248, 255);
+  -fx-background-insets: 0, 0 0 1 0;
+}
+.rst-table-view .table-row-cell:selected, .rst-table-view .table-row-cell:odd:selected {
+  -fx-background-color: rgb(197, 197, 210), rgb(219, 224, 255);
+  -fx-background-insets: 0, 0 0 1 0;
+}
+.rst-table-view .virtual-flow .corner {
+  -fx-background-color: #c2caff;
+}
+.rst-table-view .column-header.rst-row-selection-column {
+  -fx-background-insets: 0, 0 0 1 0;
+}
+.rst-table-view .rst-row-selection-column.table-cell {
+  -fx-border-width: 0;
+  -fx-content-display: GRAPHIC_ONLY;
+  -fx-alignment: CENTER;
+}
+.rst-navigation-rail {
+  -fx-max-width: 80px;
+  -fx-padding: 0 8px;
+  -fx-background-color: rgb(239, 237, 244);
+  -fx-alignment: CENTER;
+  -fx-spacing: 8px;
+}
+.rst-navigation-rail .rst-nav-item {
+  -fx-min-height: 56px;
+  -fx-max-height: 56px;
+  -fx-pref-height: 56px;
+  -fx-padding: 4px 12px;
+  -fx-content-display: TOP;
+  -fx-background-radius: 12px;
+  -fx-border-radius: 12px;
+  -fx-text-fill: rgb(68, 70, 80);
+  -fx-fill: rgb(68, 70, 80);
+  -fx-font-size: 12pt;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.5pt;
+  -fx-line-height: 16pt;
+  -fx-font-family: "Roboto" serif;
+}
+.rst-navigation-rail .rst-nav-item .ikonli-font-icon.rst-icon {
+  -fx-icon-size: 24px;
+  -fx-icon-color: rgb(68, 70, 80);
+}
+.rst-navigation-rail .rst-nav-item:selected {
+  -fx-background-color: rgb(219, 224, 255);
+  -fx-text-fill: rgb(63, 70, 98);
+}
+.rst-navigation-rail .rst-nav-item:selected .ikonli-font-icon.rst-icon {
+  -fx-icon-color: rgb(63, 70, 98);
+}
+/*# sourceMappingURL=theme.css.map */

@@ -1,0 +1,105 @@
+
+/********************************
+*              Chip            *
+*******************************/
+
+.rst-chip {
+
+    $chip-height:  32px;
+    $chip-icon-size: floor($chip-height * 0.5625);
+    $chip-hpadding: floor($chip-height / 2);
+    $chip-outline-width: 1px;
+
+    -fx-min-height: $chip-height;
+    -fx-padding: 0 $chip-hpadding;
+    -fx-background-color: $color-outline-variant, $color-surface-container-low;
+    -fx-background-insets: 0, $chip-outline-width;
+    @include shape-sm();
+    @include typeface-label-lg($color-on-surface-variant);
+    -fx-alignment: CENTER;
+
+    .rst-leading-icon, .rst-trailing-icon {
+        -fx-max-height: $chip-icon-size;
+        -fx-max-width: $chip-icon-size;
+        -fx-pref-height: $chip-icon-size;
+        -fx-pref-width: $chip-icon-size;
+        -fx-font-size: $chip-icon-size;
+        @include rst-icon-base($color-primary);
+    }
+
+    &:disabled {
+        -fx-background-color: rgba($color-on-surface, 0.12);
+        -fx-text-fill: rgba($color-on-surface, 0.38);
+
+        .rst-leading-icon, .rst-trailing-icon {
+            @include rst-icon-base(rgba($color-on-surface, 0.38));
+        }
+    }
+
+    &:hover {
+        -fx-background-color: $color-outline-variant, $color-surface-container-low, rgba($color-on-surface-variant, 0.08);
+        -fx-background-insets: 0, $chip-outline-width, $chip-outline-width;
+        @include elevate(1);
+    }
+
+    &:pressed {
+        -fx-background-color: $color-outline-variant, $color-surface-container-low, rgba($color-on-surface-variant, 0.12);
+        -fx-background-insets: 0, $chip-outline-width, $chip-outline-width;
+        @include elevate(0);
+    }
+
+    &:input {
+      .rst-leading-icon, .rst-trailing-icon {
+          @include rst-icon-base($color-on-surface-variant);
+      }
+
+      &:selected {
+          .rst-leading-icon {
+              @include rst-icon-base($color-primary);
+          }
+
+          .rst-trailing-icon {
+              @include rst-icon-base($color-on-secondary-container);
+          }
+      }
+    }
+
+    &:filter {
+      .rst-leading-icon, .rst-trailing-icon {
+          @include rst-icon-base($color-on-surface-variant);
+      }
+
+      &:selected {
+          .rst-leading-icon, .rst-trailing-icon {
+              @include rst-icon-base($color-on-secondary-container);
+          }
+      }
+    }
+
+    &:alert, &:filter, &:input {
+        &:selected {
+            -fx-background-color: $color-secondary-container;
+            -fx-text-fill: $color-on-secondary-container;
+
+            &:hover {
+                -fx-background-color: $color-secondary-container, rgba($color-on-secondary-container, 0.08);
+                -fx-background-insets: 0, 0;
+                -rst-icon-size: $chip-icon-size;
+            }
+
+            &:pressed {
+                -fx-background-color: $color-secondary-container, rgba($color-on-secondary-container, 0.12);
+                -fx-background-insets: 0, 0;
+            }
+        }
+
+        &:disabled {
+            -fx-background-color: rgba($color-on-surface, 0.12);
+            -fx-text-fill: rgba($color-on-surface, 0.38);
+
+            .rst-leading-icon, .rst-trailing-icon {
+                @include rst-icon-base(rgba($color-on-surface, 0.38));
+            }
+        }
+    }
+}

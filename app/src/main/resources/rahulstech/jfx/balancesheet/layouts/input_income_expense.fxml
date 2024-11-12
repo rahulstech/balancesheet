@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import rahulstech.jfx.balancesheet.frontend.control.MaterialTextField?>
+
+<?import rahulstech.jfx.balancesheet.frontend.control.DescriptionPane?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="rahulstech.jfx.balancesheet.controller.InputIncomeExpenseController">
+
+    <VBox spacing="16" maxWidth="500" style="-fx-background-color: -color-surface-container-low;">
+        <padding>
+            <Insets topRightBottomLeft="8"/>
+        </padding>
+
+        <!-- type -->
+
+        <DescriptionPane fx:id="typeDescription">
+            <HBox spacing="8">
+                <ToggleButton fx:id="typeIncome" text="Income" styleClass="rst-choice-button"  />
+
+                <ToggleButton fx:id="typeExpense" text="Expense" styleClass="rst-choice-button" />
+            </HBox>
+        </DescriptionPane>
+
+        <!-- date -->
+
+        <DescriptionPane fx:id="dateDescription" labelText="Date">
+            <DatePicker fx:id="inputDate" promptText="DD/MM/YYYY" styleClass="rst-date-picker" />
+        </DescriptionPane>
+
+        <DescriptionPane fx:id="amountDescription" labelText="Amount">
+
+            <MaterialTextField fx:id="inputAmount" textFieldStyle="OUTLINED" trailingIconRole="CANCEL_CLEAR">
+                <trailingIcon>
+                    <Region styleClass="rst-icon-material-cancel" />
+                </trailingIcon>
+            </MaterialTextField>
+
+        </DescriptionPane>
+
+        <DescriptionPane labelText="Note">
+            <TextArea fx:id="inputNote" styleClass="rst-outlined-text-area" maxWidth="480"  />
+        </DescriptionPane>
+
+    </VBox>
+
+</ScrollPane>

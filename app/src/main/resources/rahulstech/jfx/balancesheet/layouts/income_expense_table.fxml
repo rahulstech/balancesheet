@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<?import rahulstech.jfx.balancesheet.frontend.control.MaterialPagination?>
+<?import javafx.scene.control.TitledPane?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.ToggleButton?>
+<?import rahulstech.jfx.balancesheet.frontend.control.SearchField?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import rahulstech.jfx.balancesheet.frontend.control.Chip?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="rahulstech.jfx.balancesheet.controller.IncomeExpenseTableController">
+
+    <padding>
+        <Insets top="24" left="24" bottom="24" right="24" />
+    </padding>
+
+    <top>
+        <HBox alignment="CENTER_RIGHT" spacing="16">
+            <Pane HBox.hgrow="ALWAYS">
+                <SearchField fx:id="search" promptText="Search Note" />
+            </Pane>
+
+            <Button fx:id="btnDelete" onAction="#onClickDelete" text="Delete" visible="false" styleClass="rst-text-button-with-icon">
+                <graphic>
+                    <FontIcon iconLiteral="mdi-delete" styleClass="rst-icon" />
+                </graphic>
+            </Button>
+
+            <Button onAction="#onClickAddNew" text="Add New" styleClass="rst-filled-button-with-icon" >
+                <graphic>
+                    <FontIcon iconLiteral="mdi-plus" styleClass="rst-icon" />
+                </graphic>
+            </Button>
+        </HBox>
+    </top>
+
+    <center>
+        <BorderPane>
+            <top>
+                <BorderPane>
+                    <BorderPane.margin>
+                        <Insets bottom="16" top="16" />
+                    </BorderPane.margin>
+
+                    <top>
+                        <HBox spacing="16" >
+
+                            <ScrollPane styleClass="rst-scroll-pane" minHeight="60" HBox.hgrow="ALWAYS" fitToHeight="true" vbarPolicy="NEVER">
+                                <padding>
+                                    <Insets top="8" bottom="8" left="8" right="8" />
+                                </padding>
+                                <HBox spacing="8" >
+                                    <Chip text="Chip 1" chipType="FILTER" />
+                                    <Chip text="Chip 2" chipType="FILTER" />
+                                    <Chip text="Chip 3" chipType="FILTER" />
+                                    <Chip text="Chip 4" chipType="FILTER" />
+                                    <Chip text="Chip 5" chipType="FILTER" />
+                                    <Chip text="Chip 6" chipType="FILTER" />
+                                    <Chip text="Chip 7" chipType="FILTER" />
+                                    <Chip text="Chip 8" chipType="FILTER" />
+                                    <Chip text="Chip 9" chipType="FILTER" />
+                                    <Chip text="Chip 10" chipType="FILTER" />
+                                    <Chip text="Chip 11" chipType="FILTER" />
+                                    <Chip text="Chip 12" chipType="FILTER" />
+                                    <Chip text="Chip 13" chipType="FILTER" />
+                                    <Chip text="Chip 14" chipType="FILTER" />
+<!--                                    <Chip text="Chip 15" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 16" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 17" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 18" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 19" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 20" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 21" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 22" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 23" chipType="FILTER" />-->
+<!--                                    <Chip text="Chip 24" chipType="FILTER" />-->
+                                </HBox>
+                            </ScrollPane>
+
+
+                            <ToggleButton fx:id="toggleSectionFilter" styleClass="rst-tonal-icon-button"
+                                          GridPane.columnIndex="2" GridPane.rowIndex="0">
+                                <graphic>
+                                    <FontIcon styleClass="rst-icon" iconLiteral="mdi-filter" />
+                                </graphic>
+                                <tooltip>
+                                    <Tooltip styleClass="rst-tooltip"/>
+                                </tooltip>
+                            </ToggleButton>
+
+                            <Button onAction="#onClickRefresh" styleClass="rst-tonal-icon-button" >
+                                <tooltip>
+                                    <Tooltip text="Refresh" styleClass="rst-tooltip" />
+                                </tooltip>
+                                <graphic>
+                                    <FontIcon iconLiteral="mdi-refresh" styleClass="rst-icon" />
+                                </graphic>
+                            </Button>
+                        </HBox>
+                    </top>
+
+                    <center>
+                        <TitledPane fx:id="sectionFilter" expanded="false" styleClass="rst-expandable-section">
+
+                            <HBox alignment="BOTTOM_CENTER" HBox.hgrow="ALWAYS" spacing="16" style="-fx-background-color: -color-surface-container-low;">
+
+                                <padding>
+                                    <Insets topRightBottomLeft="16" />
+                                </padding>
+
+                                <VBox spacing="6">
+                                    <Label text="Date Start" styleClass="rst-text-field-label"/>
+                                    <DatePicker fx:id="filterDateStart" promptText="DD/MM/YYYY" styleClass="rst-date-picker"/>
+                                </VBox>
+
+                                <VBox spacing="6">
+                                    <Label text="Date End" styleClass="rst-text-field-label"/>
+
+                                    <DatePicker fx:id="filterDateEnd" promptText="DD/MM/YYYY" styleClass="rst-date-picker"/>
+                                </VBox>
+
+                                <ToggleButton fx:id="typeIncome" styleClass="rst-choice-button" text="Income" />
+
+                                <ToggleButton fx:id="typeExpense" styleClass="rst-choice-button" text="Expense" />
+
+                            </HBox>
+
+                        </TitledPane>
+                    </center>
+
+                </BorderPane>
+            </top>
+            <center>
+                <TableView fx:id="tblInEx" styleClass="rst-table-view">
+                    <columns>
+                        <TableColumn fx:id="colDate" text="Date" prefWidth="240" />
+                        <TableColumn fx:id="colAmount" text="Amount" prefWidth="220" />
+                        <TableColumn fx:id="colType" text="Type" prefWidth="150" />
+                        <TableColumn fx:id="colNote" text="Note" prefWidth="480" />
+                    </columns>
+                </TableView>
+            </center>
+        </BorderPane>
+    </center>
+
+    <bottom>
+        <MaterialPagination fx:id="pagination" maxEntriesText="Rows per page" >
+            <BorderPane.margin>
+                <Insets top="16" />
+            </BorderPane.margin>
+        </MaterialPagination>
+    </bottom>
+
+</BorderPane>

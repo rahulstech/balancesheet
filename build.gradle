@@ -1,0 +1,44 @@
+plugins {
+    id 'org.javamodularity.moduleplugin' version '1.8.12' apply false;
+    id 'org.openjfx.javafxplugin' version '0.0.13' apply false
+    id 'org.beryx.jlink' version '2.25.0' apply false
+}
+
+allprojects {
+
+    apply plugin: 'org.openjfx.javafxplugin'
+    apply plugin: 'org.javamodularity.moduleplugin'
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+
+    group 'rahulstech.jfx'
+    version '1.0-SNAPSHOT'
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    javafx {
+        version = '21'
+        modules = ['javafx.fxml','javafx.controls']
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+        options.compilerArgs.addAll(Arrays.asList('--release','21'))
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+//dependencies {
+//
+//    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+//    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+//}

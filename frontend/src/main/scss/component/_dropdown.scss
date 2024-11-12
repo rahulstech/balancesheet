@@ -1,0 +1,55 @@
+/********************************
+*           DatePicker          *
+********************************/
+
+.bsh-text-field-container {
+
+    .bsh-date-picker {
+        -fx-min-height: $text-field-height;
+        -fx-background-color: transparent;
+        -fx-background-insets: 0;
+        @include border($color: transparent, $width: 0);
+
+        .text-field {
+            @include typeface-body-md($color-on-surface-variant);
+        }
+
+        & > .arrow-button {
+            $size: 40px;
+            -fx-min-width: $size;
+            -fx-max-width: $size;
+            -fx-min-height: $size;
+            -fx-max-height: $size;
+            -fx-padding: 16px 14px;
+            -fx-background-color: transparent;
+            @include shape-full();
+            -fx-content-display: GRAPHIC_ONLY;
+            -fx-alignment: CENTER;
+
+            & > .arrow {
+                $size: 18px;
+                -fx-min-width: $size;
+                -fx-max-width: $size;
+                -fx-min-height: $size;
+                -fx-max-height: $size;
+                -fx-background-color: $color-on-surface-variant;
+                -fx-scale-shape: true;
+            }
+
+            &:hover {
+                -fx-background-color: rgba($color-on-surface-variant, $alpha-surface-hover);
+            }
+        }
+    }
+
+    &:focused  {
+        .arrow {
+            -fx-background-color: $color-primary;
+        }
+    }
+
+    &:disabled {
+
+    }
+}
+

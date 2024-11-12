@@ -1,0 +1,46 @@
+@mixin typeface($fill, $size, $weight,  $spacing, $height, $family: 'Roboto') {
+    -fx-text-fill: $fill;
+    -fx-fill: $fill;
+    -fx-font-size: $size;
+    -fx-font-weight: $weight;
+    -fx-letter-spacing: $spacing;
+    -fx-line-height: $height;
+    -fx-font-family: $family serif;
+}
+
+@mixin text-fill($color) {
+    -fx-text-fill: $color;
+    -fx-fill: $color;
+}
+
+@mixin typeface-headline-sm($fill: $color-on-surface,$size: 24pt, $height: 32pt) {
+    @include typeface($fill, $size, $weight: 400, $spacing: 0, $height: $height);
+}
+
+@mixin typeface-title-sm($fill: $color-on-surface,$size: 14pt, $height: 20pt) {
+    @include typeface($fill, $size, $weight: 500, $spacing: 0.1pt, $height: $height);
+}
+
+@mixin typeface-body-lg($fill: $color-on-surface,$size: 16pt, $height: 24pt) {
+    @include typeface($fill, $size, $weight: 400, $spacing: 0.5pt, $height: $height);
+}
+
+@mixin typeface-body-md($fill: $color-on-surface, $size: 14pt, $height: 20pt) {
+    @include typeface($fill, $size, $weight: 400, $spacing: 0.25pt, $height: $height);
+}
+
+@mixin typeface-body-sm($fill: $color-on-surface, $size: 12pt, $height: 16pt) {
+    @include typeface($fill, $size, $weight: 400, $spacing: 0.4pt, $height: $height);
+}
+
+@mixin typeface-label-lg($fill: $color-on-surface,$size: 14pt, $height: 20pt) {
+    @include typeface($fill, $size, $weight: 500, $spacing: 0.1pt, $height: $height);
+}
+
+@mixin typeface-label-md($fill: $color-on-surface, $size: 12pt, $height: 16pt) {
+    @include typeface($fill, $size, $weight: 500, $spacing: 0.5pt, $height: $height);
+}
+
+@mixin typeface-label-sm($fill: $color-on-surface, $size: 12pt, $height: 16pt) {
+    @include typeface($fill, $size, $weight: 400, $spacing: 0.4pt, $height: $height);
+}

@@ -1,0 +1,216 @@
+// Global variables
+$text-field-height: 48px;
+$text-field-padding-horizontal: 16px;
+$text-field-padding-vertical: 8px;
+$text-field-icon-size: floor($text-field-height * 0.42);
+
+// Utility mixins for common states
+@mixin focused-text-field($border-color, $border-width: 2px) {
+    &:focused {
+        -fx-border-color: $border-color;
+        -fx-border-width: $border-width;
+    }
+}
+
+@mixin disabled-text-field {
+    &:disabled {
+        -fx-text-fill: rgba($color-on-surface, $alpha-text-disabled);
+        -fx-background-color: rgba($color-on-surface, $alpha-surface-disabled);
+    }
+}
+
+@mixin error-text-field {
+    &:error {
+        -fx-border-color: $color-error;
+    }
+}
+
+@mixin text-field-padding($horizontal: 16px, $vertical: 8px) {
+    -fx-padding: $vertical $horizontal;
+}
+
+@mixin text-field-icon() {
+
+    $icon-color: $color-outline;
+    $icon-color-focused: $color-on-surface-variant;
+    $icon-color-error-focused: $color-error;
+    $icon-color-disabled: rgba($color-on-surface, 0.38);
+
+    .rst-leading-icon, .rst-trailing-icon {
+        -fx-min-height: $text-field-icon-size;
+        -fx-min-width: $text-field-icon-size;
+        -fx-max-height: $text-field-icon-size;
+        -fx-max-width: $text-field-icon-size;
+        -fx-pref-height: $text-field-icon-size;
+        -fx-pref-width: $text-field-icon-size;
+        -fx-text-size: $text-field-icon-size;
+
+        -fx-background-color: $icon-color;
+        -fx-text-fill: $icon-color;
+        -fx-fill: $icon-color;
+    }
+
+    &:error:focused {
+        .rst-trailing-icon {
+            -fx-background-color: $icon-color-error-focused;
+            -fx-text-fill: $icon-color-error-focused;
+            -fx-fill: $icon-color-error-focused;
+        }
+    }
+
+    &:focused {
+        .rst-leading-icon, .rst-trailing-icon {
+            -fx-background-color: $icon-color-focused;
+            -fx-text-fill: $icon-color-focused;
+            -fx-fill: $icon-color-focused;
+        }
+    }
+
+    &:disabled {
+        .rst-leading-icon, .rst-trailing-icon {
+            -fx-background-color:  $icon-color-disabled;
+            -fx-text-fill:  $icon-color-disabled;
+            -fx-fill: $icon-color-disabled;
+        }
+    }
+}
+
+// Base text field styles
+@mixin rst-text-field {
+    -fx-min-height: $text-field-height;
+    @include shape-none();
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-prompt-text-fill: $color-outline;
+    @include typeface-body-lg($color-outline);
+
+    @include text-field-icon();
+
+    @include disabled-text-field;
+
+    // Text Field Labels
+    .rst-text-field-label {
+        @include typeface-body-lg($fill: $color-on-surface-variant, $size: 12pt, $height: 16pt);
+    }
+
+    // Supporting Text for Text Fields
+    .rst-text-field-supporting-text {
+        @include typeface-body-sm($fill: $color-on-surface-variant);
+    }
+
+    &:disabled {
+        .rst-text-field-label, .rst-text-field-supporting-text {
+            @include text-fill(rgba($color-on-surface, 0.38));
+        }
+    }
+
+    &:error {
+        .rst-text-field-label, .rst-text-field-supporting-text {
+            @include text-fill($color-error);
+        }
+    }
+
+    &:focused {
+        @include text-fill($color-on-surface);
+    }
+}
+
+/******************************************
+*            Filled TextField             *
+*******************************************/
+
+// Filled Text Field
+.rst-filled-text-field {
+    @include rst-text-field();
+    -fx-background-color: $color-surface-container-high;
+    @include text-field-padding();
+
+    @include disabled-text-field;
+}
+
+// Outlined Text Field with focused, disabled, and error states
+@mixin outlined-text-field {
+    @include rst-text-field();
+    -fx-background-color: transparent;
+    -fx-border-color: $color-outline;
+    -fx-border-width: 1px;
+
+    @include focused-text-field($color-primary);
+    @include error-text-field;
+
+    &:disabled {
+        -fx-background-color: transparent;
+        -fx-border-color: rgba($color-on-surface, 0.12);
+        -fx-text-fill: rgba($color-on-surface, 0.38);
+        -fx-prompt-text-fill: rgba($color-on-surface, 0.38);
+    }
+}
+
+/******************************************
+*            Outlined TextField           *
+*******************************************/
+
+// Outlined Text Field Usage
+.rst-outlined-text-field {
+    @include outlined-text-field();
+    @include text-field-padding();
+}
+
+/******************************************
+*            Outlined TextArea            *
+*******************************************/
+
+// Outlined Text Area with padding adjustments
+.rst-outlined-text-area {
+    @include outlined-text-field();
+    @include text-field-padding(0,0);
+
+    .content, &:focused .content {
+        -fx-background-color: transparent;
+        @include text-field-padding();
+    }
+
+    .scroll-bar {
+        @include scroll-bar;
+    }
+}
+
+/******************************************
+*               SearchField               *
+*******************************************/
+
+// Search Field with shape
+.rst-search-field {
+    @extend .rst-filled-text-field;
+    @include shape-xl();
+}
+
+/******************************************
+*   TextField Label and Supporting Text   *
+*******************************************/
+
+// Text Field Labels
+.rst-text-field-label {
+    @include typeface-body-lg($fill: $color-on-surface-variant, $size: 12pt, $height: 16pt);
+
+    &:disabled {
+        -fx-text-fill: rgba($color-on-surface, 0.38);
+    }
+
+    &:error {
+        -fx-text-fill: $color-error;
+    }
+}
+
+// Supporting Text for Text Fields
+.rst-text-field-supporting-text {
+    @include typeface-body-sm($fill: $color-on-surface-variant);
+
+    &:disabled {
+        -fx-text-fill: rgba($color-on-surface, 0.38);
+    }
+
+    &:error {
+        -fx-text-fill: $color-error;
+    }
+}

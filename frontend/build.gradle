@@ -1,0 +1,42 @@
+plugins {
+    id 'java-library'
+
+    // compile scss
+    id 'io.freefair.sass-java' version '8.6'
+}
+
+javafx {
+    configuration = 'compileOnly'
+}
+
+compileSass {
+    outputStyle = 'expanded'
+    omitSourceMapUrl = true
+    sourceMapContents = false
+    sourceMapEmbed = false
+    sourceMapEnabled = true
+    source = file('src/main/scss')
+    destinationDir = file("src/main/resources/rahulstech/jfx/balancesheet/frontend/styles")
+}
+
+processResources {
+    exclude '**/*.css.map'
+}
+
+ext {
+    vIkonli = '12.3.1'
+}
+
+dependencies {
+    implementation project(':core')
+
+    // Ikonli font icons
+    api "org.kordamp.ikonli:ikonli-javafx:${vIkonli}"
+
+    api "org.kordamp.ikonli:ikonli-materialdesign-pack:${vIkonli}"
+
+    // javafx routing
+    api 'com.github.rahulstech:javafx-routing:2.0.0'
+
+    api 'net.synedra:validatorfx:0.5.1'
+}

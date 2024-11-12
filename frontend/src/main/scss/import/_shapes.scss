@@ -1,0 +1,64 @@
+@mixin shape-all($radius) {
+    -fx-background-radius: $radius;
+    -fx-border-radius: $radius;
+}
+
+@mixin shape-none() {
+    @include shape-all(0);
+}
+
+@mixin shape-xs() {
+    @include shape-all(4px);
+}
+
+@mixin shape-sm() {
+    @include shape-all(6px);
+}
+
+@mixin shape-md() {
+    @include shape-all(12px);
+}
+
+@mixin shape-lg() {
+    @include shape-all(16px);
+}
+
+@mixin shape-xl() {
+    @include shape-all(28px);
+}
+
+@mixin shape-full() {
+    @include shape-all(50%);
+}
+
+///////////////////////////////////
+///         Shape Classes      ///
+/////////////////////////////////
+
+.shape-node {
+    @include shape-none();
+}
+
+.shape-xs {
+    @include shape-xs();
+}
+
+.shape-sm {
+    @include shape-sm();
+}
+
+.shape-md {
+    @include shape-md();
+}
+
+.shape-lg {
+    @include shape-lg();
+}
+
+.shape-xl {
+    @include shape-xl();
+}
+
+.shape-full {
+    @include shape-full();
+}

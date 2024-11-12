@@ -1,0 +1,5 @@
+rootProject.name = "balancesheet"
+include ":app"
+include ":backend:balancesheetdb"
+include ":core"
+include ':frontend'
